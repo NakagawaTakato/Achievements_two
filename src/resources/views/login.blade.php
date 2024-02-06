@@ -24,7 +24,7 @@
             </div>
             <br/>
             <i class="fa-solid fa-lock"></i>
-            <input type="text" name="password" placeholder="Password" class="container-group-text_two" value="{{ old('password') }}" />
+            <input type="password" name="password" placeholder="Password" class="container-group-text_two" />
             <div class="form__error">
                 @error('password')
                 {{ $message }}
