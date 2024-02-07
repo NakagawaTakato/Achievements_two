@@ -16,7 +16,7 @@ use App\Http\Controllers\ShopController;
 
 Route::get('/', [ShopController::class, 'index']);
 Route::get('/register', [ShopController::class, 'register']);
-Route::post('/register/thanks', [ShopController::class, 'thanks']);
-Route::get('/login', [ShopController::class, 'login']);
+Route::post('/register/login', [ShopController::class, 'login']);
+Route::post('/register/login/thanks', [ShopController::class, 'thanks']);
 
 

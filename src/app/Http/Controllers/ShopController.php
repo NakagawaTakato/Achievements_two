@@ -19,16 +19,17 @@ class ShopController extends Controller
         return view('register', ['contact' => $contact]);
     }
 
-    public function thanks(ContactRequest $request)
+    public function login(ContactRequest $request)
     {
         $contact = $request->only(['username', 'email', 'password']);
         Contact::create($contact);
-        return view('thanks', ['contact' => $contact]);
+        return view('login', ['contact' => $contact]);
     }
 
-    public function login()
+    public function thanks(Request $request)
     {
-        return view('login');
+        return view('thanks');
     }
+
 
 }
