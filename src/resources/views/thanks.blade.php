@@ -14,7 +14,10 @@
 
   <div class="wrapper">
     <div class="wrapper-text">会員登録ありがとうございます</div>
-    <a href="http://localhost/register/thanks/login" class="wrapper-button">ログインする</a>
+    <form action="http://localhost/register/thanks/login" method="post">
+      @csrf
+      <button type="submit" class="wrapper-button">ログインする</button>
+    </form>
   </div>
 </form>
 @endsection

@@ -10,7 +10,7 @@
 
     <div class="container-group">
         <a href="#" class="container-group-text_one">Home</a>
-        <a href="http://localhost/register" class="container-group-text_two">Registration</a>
+        <a href="/register" class="container-group-text_two">Registration</a>
         <a href="#" class="container-group-text_three">Login</a>
     </div>
 </div>
