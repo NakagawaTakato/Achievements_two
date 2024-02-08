@@ -15,7 +15,7 @@ class ShopController extends Controller
 
     public function thanks(Request $request)
     {
-        return view('register/thanks');
+        return view('thanks');
     }
 
 }
