@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<form class="form" action="/login" method="post">
+<form class="form" action="/register/thanks/login" method="post">
     @csrf
     <div class="container">
         <a href="#" class="container-exit">≡</a>

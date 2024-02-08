@@ -18,4 +18,5 @@ class ShopController extends Controller
         return view('thanks');
     }
 
+
 }
