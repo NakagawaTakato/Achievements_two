@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<form class="form" action="/register" method="post">
+<form class="form" action="/register/login" method="post">
     @csrf
     <div class="container">
         <a href="#" class="container-exit">≡</a>
@@ -16,7 +16,7 @@
         <div class="container-group">
             <div class="container-group-title">Registration</div>
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="username" placeholder="Username" class="container-group-text_one" value="{{ old('username') }}" />
+            <input type="text" name="name" placeholder="Username" class="container-group-text_one" value="{{ old('name') }}" />
             <div class="form__error">
                 @error('username')
                 {{ $message }}
