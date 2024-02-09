@@ -5,16 +5,18 @@
 @endsection
 
 @section('content')
-<div class="container">
-    <a href="#" class="container-exit">×</a>
-    <!-- @if (Auth::check()) -->
-    <div class="container-group">
-        <a href="#" class="container-group-text_one">Home</a>
-        <a href="/register" class="container-group-text_two">Registration</a>
-        <a href="/login" class="container-group-text_three">Login</a>
+<form class="form" action="/logout" method="post">
+     @csrf
+    <div class="container">
+        <a href="#" class="container-exit">×</a>
+
+        <div class="container-group">
+            <a href="#" class="container-group-text_one">Home</a>
+            <a href="http://localhost/" class="container-group-text_two">Logout</a>
+            <a href="http://localhost/shop_all" class="container-group-text_three">Mypage</a>
+        </div>
     </div>
-    <!-- @endif -->
-</div>
+</form>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var closeButton = document.querySelector('.container-exit');

@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<form class="form" action="/register/thanks/login" method="post">
+<form class="form" action="/login/menu_two" method="post">
     @csrf
     <div class="container">
         <a href="#" class="container-exit">≡</a>
@@ -31,7 +31,7 @@
                 @enderror
             </div>
             <div class="form__button">
-                <button class="form__button-submit" type="submit">登録</button>
+                <button class="form__button-submit" type="submit">ログイン</button>
             </div>
         </div>
     </div>
