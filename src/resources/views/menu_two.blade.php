@@ -2,13 +2,14 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 @endsection
 
 @section('content')
 <form class="form" action="/logout" method="post">
      @csrf
     <div class="container">
-        <a href="#" class="container-exit">×</a>
+        <a href="#" class="container-exit"><i class="fa-solid fa-xmark"></i></a>
 
         <div class="container-group">
             <a href="#" class="container-group-text_one">Home</a>

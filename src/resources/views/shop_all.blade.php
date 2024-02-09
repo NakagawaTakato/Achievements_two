@@ -8,7 +8,7 @@
 @section('content')
 @csrf
 <div class="container">
-    <a href="#" class="container-exit">≡</a>
+    <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
 
 

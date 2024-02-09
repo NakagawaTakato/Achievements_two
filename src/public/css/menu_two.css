@@ -27,6 +27,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.container-dropdown {
+    appearance: none;
+}
+
+.container-dropdown::-ms-expand {
+    display: none;
+}
 
 .container-bar .container-dropdown:last-of-type,
 .container-bar .container-dropdown:first-of-type {

@@ -9,7 +9,7 @@
 <form class="form" action="/login/menu_two" method="post">
     @csrf
     <div class="container">
-        <a href="#" class="container-exit">≡</a>
+        <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
         <p class="container-text">Rese</p>
 
 
