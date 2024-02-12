@@ -7,13 +7,11 @@
 @section('content')
 <div class="container">
     <a href="#" class="container-exit">×</a>
-    <!-- @if (Auth::check()) -->
     <div class="container-group">
         <a href="#" class="container-group-text_one">Home</a>
         <a href="/register" class="container-group-text_two">Registration</a>
         <a href="/login" class="container-group-text_three">Login</a>
     </div>
-    <!-- @endif -->
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
