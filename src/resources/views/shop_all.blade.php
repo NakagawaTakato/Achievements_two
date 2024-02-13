@@ -37,14 +37,20 @@
     <h2 class="wrapper-content-ttl">
       仙人
     </h2>
-    <p class="wrapper-content-text">#東京 #寿司</p>
-    <div class="wrapper-content-cat">詳しくみる</div>
-    <div class="wrapper-content-tag">
-      <p class="wrapper-content-tag-item">#朝ごはん</p>
-      <p class="wrapper-content-tag-item wrapper-content-tag-item--last">
-        2021/01/01
-      </p>
-    </div>
+    <p class="wrapper-content-text">#東京都 #寿司</p>
+    <a href="" class="wrapper-content-cat">詳しくみる</a>
+  </div>
+</div>
+<div class="wrapper_two">
+  <div class="wrapper-img">
+    <img src="img/yakiniku.jpg" alt="" />
+  </div>
+  <div class="wrapper-content">
+    <h2 class="wrapper-content-ttl">
+      仙人
+    </h2>
+    <p class="wrapper-content-text">#東京都 #寿司</p>
+    <a href="" class="wrapper-content-cat">詳しくみる</a>
   </div>
 </div>
 @endsection
