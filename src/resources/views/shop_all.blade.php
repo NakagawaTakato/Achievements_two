@@ -41,16 +41,4 @@
     <a href="" class="wrapper-content-cat">詳しくみる</a>
   </div>
 </div>
-<div class="wrapper_two">
-  <div class="wrapper-img">
-    <img src="img/yakiniku.jpg" alt="" />
-  </div>
-  <div class="wrapper-content">
-    <h2 class="wrapper-content-ttl">
-      仙人
-    </h2>
-    <p class="wrapper-content-text">#東京都 #寿司</p>
-    <a href="" class="wrapper-content-cat">詳しくみる</a>
-  </div>
-</div>
 @endsection
