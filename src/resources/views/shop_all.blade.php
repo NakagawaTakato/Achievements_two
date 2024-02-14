@@ -43,7 +43,7 @@
       <i class="fa-solid fa-heart"></i>
     </div>
   </div>
-  <!-- <div class="wrapper-box_two">
+  <div class="wrapper-box_two">
     <div class="wrapper-box-img">
       <img src="img/yakiniku.jpg" alt="" />
     </div>
@@ -57,7 +57,7 @@
       <i class="fa-solid fa-heart"></i>
     </div>
   </div>
-  <div class="wrapper-box_three">
+  <!-- <div class="wrapper-box_three">
     <div class="wrapper-box-img">
       <img src="img/izakaya.jpg" alt="" />
     </div>
@@ -70,8 +70,8 @@
 
       <i class="fa-solid fa-heart"></i>
     </div>
-  </div>
-  <div class="wrapper-box_four">
+  </div> -->
+  <!-- <div class="wrapper-box_four">
     <div class="wrapper-box-img">
       <img src="img/italian.jpg" alt="" />
     </div>
