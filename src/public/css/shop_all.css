@@ -52,29 +52,46 @@
 }
 
 .wrapper {
-    width: 250px;
-    height: 250px;
-    margin: 50px 0px 0px 100px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 50px 300px 300px 300px;
+    grid-template-columns: 0.5fr 1.55fr 2fr 2fr;
 }
 
-.wrapper-img img {
+.wrapper-box {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.wrapper-box-img img {
     width: 100%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-.wrapper-content {
-    background-color: #000000;
-    margin: 0px 0px 0px 0px;
+.wrapper-box-content {
+    position: absolute;
+    top: 135px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-top: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.wrapper-content-text {
-    margin-bottom: 30px;
+.wrapper-box-content-ttl {
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
 }
 
-.wrapper-content-cat {
+.wrapper-box-content-text {
+    font-size: 13px;
+    margin: 0px 0px 10px 10px;
+}
+
+.wrapper-box-content-cat {
+    margin-left: 10px;
     font-size: 15px;
     padding: 5px 15px;
     background: #305DFF;
@@ -85,12 +102,11 @@
     border-radius: 3px;
 }
 
-.wrapper-content-ttl {
-    font-size: 15px;
-    margin: 0px 0px 50px 0px;
+.fa-solid.fa-heart {
+    margin-left: 85px;
+    font-size: 24px;
 }
 
-.wrapper-content-text {
-    font-size: 15px;
-    margin: -50px 0px 10px 0px;
+.fa-solid.fa-heart.active-heart {
+    color: red;
 }
