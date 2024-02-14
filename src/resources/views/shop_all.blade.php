@@ -29,6 +29,7 @@
 </div>
 
 <div class="wrapper">
+  <!-- 1行目 -->
   <div class="wrapper-box">
     <div class="wrapper-box-img">
       <img src="img/sushi.jpg" alt="" />
@@ -80,6 +81,64 @@
         ルーク
       </h2>
       <p class="wrapper-box-content-text">#東京都 #イタリアン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+
+  <!-- 2行目 -->
+  <div class="wrapper-box_five">
+    <div class="wrapper-box-img">
+      <img src="img/ramen.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        志摩屋
+      </h2>
+      <p class="wrapper-box-content-text">#福岡県 #ラーメン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_six">
+    <div class="wrapper-box-img">
+      <img src="img/yakiniku.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        香
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #焼肉</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_seven">
+    <div class="wrapper-box-img">
+      <img src="img/izakaya.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        JJ
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #イタリアン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_eight">
+    <div class="wrapper-box-img">
+      <img src="img/italian.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        ラーメンの極み
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #ラーメン</p>
       <a href="" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
