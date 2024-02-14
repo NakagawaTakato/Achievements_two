@@ -23,7 +23,7 @@
 }
 
 .container-group {
-    margin: -25px 0px 0px 500px;
+    margin: -30px 0px 0px auto;
 }
 
 .container-group-bar {
@@ -53,8 +53,8 @@
 
 .wrapper {
     display: grid;
-    grid-template-rows: 50px 300px 300px 300px;
-    grid-template-columns: 0.5fr 1.55fr 0.1fr 1.55fr 0.1fr 1.55fr 0.1fr 1.55fr 0.5fr;
+    grid-template-rows: 25px 300px 300px 300px;
+    grid-template-columns: 0.6fr 1.55fr 0.1fr 1.55fr 0.1fr 1.55fr 0.1fr 1.55fr 0.5fr;
 }
 
 .wrapper-box {
@@ -63,10 +63,22 @@
     grid-row: 2/3;
 }
 
-.wwrapper-box_two {
+.wrapper-box_two {
     position: relative;
-    grid-column: 2/3;
-    grid-row: 4/5;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.wrapper-box_three {
+    position: relative;
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+
+.wrapper-box_four {
+    position: relative;
+    grid-column: 8/9;
+    grid-row: 2/3;
 }
 
 .wrapper-box-img img {
