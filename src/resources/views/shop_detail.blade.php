@@ -10,11 +10,14 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
 
+    <h1>{{ request('name') }}</h1>
+    <p>{{ request('detail') }}</p>
+
     <div class="container-box">
         <div class="container-box-name">
-            <h1>{{ request('name') }}</h1>
+            
         </div>
-        <p>{{ request('detail') }}</p>
+
     </div>
 </div>
 <script>
