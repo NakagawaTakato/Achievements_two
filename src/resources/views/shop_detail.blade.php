@@ -11,8 +11,9 @@
     <p class="container-text">Rese</p>
 
     <h1>{{ request('name') }}</h1>
-    <p>{{ request('detail') }}</p>
+    <p>#{{ request('city') }} #{{ request('shop') }}</p>
 
+    
     <div class="container-box">
         <div class="container-box-name">
             
