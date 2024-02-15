@@ -118,7 +118,7 @@
   </div>
   <div class="wrapper-box_seven">
     <div class="wrapper-box-img">
-      <img src="img/izakaya.jpg" alt="" />
+      <img src="img/italian.jpg" alt="" />
     </div>
     <div class="wrapper-box-content">
       <h2 class="wrapper-box-content-ttl">
@@ -132,13 +132,187 @@
   </div>
   <div class="wrapper-box_eight">
     <div class="wrapper-box-img">
-      <img src="img/italian.jpg" alt="" />
+      <img src="img/ramen.jpg" alt="" />
     </div>
     <div class="wrapper-box-content">
       <h2 class="wrapper-box-content-ttl">
         ラーメンの極み
       </h2>
       <p class="wrapper-box-content-text">#東京都 #ラーメン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+
+  <!-- 3行目 -->
+  <div class="wrapper-box_nine">
+    <div class="wrapper-box-img">
+      <img src="img/izakaya.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        鳥雨
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #居酒屋</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_ten">
+    <div class="wrapper-box-img">
+      <img src="img/sushi.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        築地色合
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #寿司</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_eleven">
+    <div class="wrapper-box-img">
+      <img src="img/yakiniku.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        晴海
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #焼肉</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_twelve">
+    <div class="wrapper-box-img">
+      <img src="img/yakiniku.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        三子
+      </h2>
+      <p class="wrapper-box-content-text">#福岡県 #焼肉</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+
+  <!-- 4行目 -->
+  <div class="wrapper-box_thirteen">
+    <div class="wrapper-box-img">
+      <img src="img/izakaya.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        八戒
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #居酒屋</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_fourteen">
+    <div class="wrapper-box-img">
+      <img src="img/sushi.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        福助
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #寿司</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_fifteen">
+    <div class="wrapper-box-img">
+      <img src="img/ramen.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        ラー北
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #ラーメン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_sixteen">
+    <div class="wrapper-box-img">
+      <img src="img/izakaya.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        翔
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #居酒屋</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+
+  <!-- 5行目 -->
+  <div class="wrapper-box_seventeen">
+    <div class="wrapper-box-img">
+      <img src="img/sushi.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        経緯
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #寿司</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_eighteen">
+    <div class="wrapper-box-img">
+      <img src="img/yakiniku.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        漆
+      </h2>
+      <p class="wrapper-box-content-text">#東京都 #焼肉</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_nineteen">
+    <div class="wrapper-box-img">
+      <img src="img/italian.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        THE TOOL
+      </h2>
+      <p class="wrapper-box-content-text">#福岡県 #イタリアン</p>
+      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="wrapper-box_twenty">
+    <div class="wrapper-box-img">
+      <img src="img/sushi.jpg" alt="" />
+    </div>
+    <div class="wrapper-box-content">
+      <h2 class="wrapper-box-content-ttl">
+        木船
+      </h2>
+      <p class="wrapper-box-content-text">#大阪府 #寿司</p>
       <a href="" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
