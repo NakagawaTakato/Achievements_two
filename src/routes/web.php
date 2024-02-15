@@ -18,3 +18,4 @@ Route::get('/', [ShopController::class, 'index']);
 Route::post('/register/thanks', [ShopController::class, 'thanks']);
 Route::post('/login/menu_two', [ShopController::class, 'menu_two']);
 Route::get('/shop_all', [ShopController::class, 'shop_all']);
+Route::get('/shop_detail', [ShopController::class, 'shop_detail']);

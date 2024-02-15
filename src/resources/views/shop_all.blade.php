@@ -39,7 +39,7 @@
         仙人
       </h2>
       <p class="wrapper-box-content-text">#東京都 #寿司</p>
-      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+      <a href="http://localhost/shop_detail" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
     </div>

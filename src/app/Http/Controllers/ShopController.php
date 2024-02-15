@@ -27,4 +27,9 @@ class ShopController extends Controller
     {
         return view('shop_all');
     }
+
+    public function shop_detail()
+    {
+        return view('shop_detaill');
+    }
 }
