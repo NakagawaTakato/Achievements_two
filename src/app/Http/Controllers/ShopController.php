@@ -30,6 +30,6 @@ class ShopController extends Controller
 
     public function shop_detail()
     {
-        return view('shop_detaill');
+        return view('shop_detail');
     }
 }
