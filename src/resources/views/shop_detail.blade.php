@@ -1,16 +1,20 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/index.css') }}">
+<link rel="stylesheet" href="{{ asset('css/shop_detail.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 @endsection
 
 @section('content')
 <div class="container">
-    <a href="#" class="container-exit">×</a>
-    <div class="container-group">
-        <a href="#" class="container-group-text_one">Home</a>
-        <a href="/register" class="container-group-text_two">Registration</a>
-        <a href="/login" class="container-group-text_three">Login</a>
+    <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
+    <p class="container-text">Rese</p>
+
+    <div class="container-box">
+        <div class="container-box-name">
+            <h1>{{ request('name') }}</h1>
+        </div>
+        <p>{{ request('detail') }}</p>
     </div>
 </div>
 <script>

@@ -39,7 +39,7 @@
         仙人
       </h2>
       <p class="wrapper-box-content-text">#東京都 #寿司</p>
-      <a href="http://localhost/shop_detail" class="wrapper-box-content-cat">詳しくみる</a>
+      <a href="http://localhost/shop_detail?name=仙人&detail=#東京都 #寿司" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
     </div>
@@ -53,7 +53,7 @@
         牛助
       </h2>
       <p class="wrapper-box-content-text">#大阪府 #焼肉</p>
-      <a href="" class="wrapper-box-content-cat">詳しくみる</a>
+      <a href="http://localhost/shop_detail?name=牛助&detail=#大阪府 #焼肉" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
     </div>
