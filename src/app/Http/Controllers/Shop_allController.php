@@ -14,7 +14,7 @@ class Shop_allController extends Controller
         $shop = $request->query('shop');
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'city', 'shop'));
+        return view('shop_all', compact('name', 'city', 'shop'));
     }
 
     public function shop_detail(Request $request)

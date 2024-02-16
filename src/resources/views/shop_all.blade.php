@@ -39,7 +39,7 @@
         仙人
       </h2>
       <p class="wrapper-box-content-text">#東京都 #寿司</p>
-      <form action="/shop_detail'" method="GET" >
+      <form action="/shop_detail" method="GET" >
         <input type="hidden" name="name" value="仙人">
         <input type="hidden" name="city" value="東京都">
         <input type="hidden" name="shop" value="寿司">
@@ -58,7 +58,7 @@
         牛助
       </h2>
       <p class="wrapper-box-content-text">#大阪府 #焼肉</p>
-      <a href="http://localhost/shop_detail?name=牛助&city=大阪府&shop=焼肉" class="wrapper-box-content-cat">詳しくみる</a>
+      <a href="#" class="wrapper-box-content-cat">詳しくみる</a>
 
       <i class="fa-solid fa-heart"></i>
     </div>
