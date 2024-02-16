@@ -40,7 +40,9 @@
       </h2>
       <p class="wrapper-box-content-text">#東京都 #寿司</p>
       <form action="/shop_all/shop_detail" method="POST" >
+        @csrf
         <input type="hidden" name="name" value="仙人">
+        <input type="hidden" name="image" value="img/sushi.jpg">
         <input type="hidden" name="city" value="東京都">
         <input type="hidden" name="shop" value="寿司">
         <button type="submit">詳しくみる</button>
