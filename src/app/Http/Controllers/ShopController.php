@@ -23,13 +23,4 @@ class ShopController extends Controller
         return view('menu_two');
     }
 
-    public function shop_all()
-    {
-        return view('shop_all');
-    }
-
-    public function shop_detail()
-    {
-        return view('shop_detail');
-    }
 }

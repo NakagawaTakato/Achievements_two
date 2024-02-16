@@ -10,8 +10,8 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
 
-    <h1>{{ request('name') }}</h1>
-    <p>#{{ request('city') }} #{{ request('shop') }}</p>
+    <h1>{{ $name }}</h1>
+    <p>{{ $city }} - {{ $shop }}</p>
 
 
     <div class="container-box">

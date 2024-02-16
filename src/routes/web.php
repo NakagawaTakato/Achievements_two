@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\Shop_allController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,6 @@ use App\Http\Controllers\ShopController;
 Route::get('/', [ShopController::class, 'index']);
 Route::post('/register/thanks', [ShopController::class, 'thanks']);
 Route::post('/login/menu_two', [ShopController::class, 'menu_two']);
-Route::get('/shop_all', [ShopController::class, 'shop_all']);
-Route::get('/shop_detail', [ShopController::class, 'shop_detail']);
+Route::get('/shop_all', [Shop_allController::class, 'shop_all']);
+Route::post('/shop_all/shop_detail', [Shop_allController::class, 'shop_detail']);
+

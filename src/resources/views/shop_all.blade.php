@@ -39,7 +39,12 @@
         仙人
       </h2>
       <p class="wrapper-box-content-text">#東京都 #寿司</p>
-      <a href="http://localhost/shop_detail?name=仙人&city=東京都&shop=寿司" class="wrapper-box-content-cat">詳しくみる</a>
+      <form action="/shop_detail'" method="GET" >
+        <input type="hidden" name="name" value="仙人">
+        <input type="hidden" name="city" value="東京都">
+        <input type="hidden" name="shop" value="寿司">
+        <button type="submit">詳しくみる</button>
+      </form>
 
       <i class="fa-solid fa-heart"></i>
     </div>
