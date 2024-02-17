@@ -11,8 +11,7 @@
     <p class="container-text">Rese</p>
 
     <h1>{{ $name }}</h1>
-    $image_text = {{ $image }}
-    <img src=image_text alt="" />
+    <img src="{{ $image }}" alt="" />
     <p>{{ $city }} - {{ $shop }}</p>
 
 
