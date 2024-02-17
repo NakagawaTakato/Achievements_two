@@ -22,11 +22,23 @@ class Shop_allController extends Controller
     {
         // POSTリクエストからデータを取得（この例ではGETと同じビューを使用）
         $name = $request->input('name');
-        $image = $request->query('image');
+        $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
 
         // ビューにデータを渡す
         return view('shop_detail', compact('name', 'image', 'city', 'shop'));
+    }
+
+    public function my_page(Request $request)
+    {
+        // POSTリクエストからデータを取得（この例ではGETと同じビューを使用）
+        $name = $request->input('name');
+        $image = $request->input('image');
+        $city = $request->input('city');
+        $shop = $request->input('shop');
+
+        // ビューにデータを渡す
+        return view('my_page', compact('name', 'image', 'city', 'shop'));
     }
 }

@@ -15,8 +15,6 @@
     <p>{{ $city }} - {{ $shop }}</p>
 
 
-    <a href="http://localhost/shop_detail/my_page" >次へ</a>
-
     <div class="container-box">
         <div class="container-box-name">
             
@@ -24,15 +22,4 @@
 
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var closeButton = document.querySelector('.container-exit');
-        var containerGroup = document.querySelector('.container-group');
-
-        closeButton.addEventListener('click', function(event) {
-            event.preventDefault();
-            containerGroup.style.display = 'none';
-        });
-    });
-</script>
 @endsection
