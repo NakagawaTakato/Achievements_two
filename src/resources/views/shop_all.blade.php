@@ -355,15 +355,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function sendData(name, image, city, shop) {
-    // ここに値を送信するためのFetch APIのコードを記述
     console.log('Sending data:', name, image, city, shop);
-    fetch('/shop_detail/my_page', { ... });
+    fetch('/shop_all/shop_detail/my_page', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({
+            name: name,
+            image: image,
+            city: city,
+            shop: shop
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
 
 function deleteData(name, image, city, shop) {
     // ここに値を削除するためのFetch APIのコードを記述
     console.log('Deleting data:', name, image, city, shop);
-    fetch('/shop_detail/my_page', { ... });
+    fetch('/shop_all/shop_detail/my_page', { ... });
 }
 </script>
 @endsection
