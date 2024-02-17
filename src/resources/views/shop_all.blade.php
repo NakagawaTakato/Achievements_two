@@ -335,16 +335,5 @@
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 全てのハートアイコンを選択
-    const hearts = document.querySelectorAll('.fa-heart');
-    // 各ハートアイコンにイベントリスナーを追加
-    hearts.forEach(function(heart) {
-        heart.addEventListener('click', function() {
-            this.classList.toggle('active-heart');
-        });
-    });
-});
-</script>
+
 @endsection
