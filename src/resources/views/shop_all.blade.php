@@ -357,15 +357,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function sendData(name, image, city, shop) {
     // ここに値を送信するためのFetch APIのコードを記述
     console.log('Sending data:', name, image, city, shop);
-    // Fetch APIの例
-    // fetch('/path/to/send', { ... });
+    fetch('/shop_detail/my_page', { ... });
 }
 
 function deleteData(name, image, city, shop) {
     // ここに値を削除するためのFetch APIのコードを記述
     console.log('Deleting data:', name, image, city, shop);
-    // Fetch APIの例
-    // fetch('/path/to/delete', { ... });
+    fetch('/shop_detail/my_page', { ... });
 }
 </script>
 @endsection
