@@ -19,6 +19,7 @@ Route::get('/', [ShopController::class, 'index']);
 Route::post('/register/thanks', [ShopController::class, 'thanks']);
 Route::post('/login/menu_two', [ShopController::class, 'menu_two']);
 Route::get('/shop_all', [Shop_allController::class, 'shop_all']);
+Route::delete('/shop_all_two', [Shop_allController::class, 'shop_all_two']);
 Route::post('/shop_all/shop_detail', [Shop_allController::class, 'shop_detail']);
 Route::post('/my_page', [Shop_allController::class, 'my_page']);
 
