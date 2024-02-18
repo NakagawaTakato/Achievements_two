@@ -31,8 +31,11 @@ class Shop_allController extends Controller
     public function my_page(Request $request)
     {
         $name = $request->input('name');
+        $image = $request->input('image');
+        $city = $request->input('city');
+        $shop = $request->input('shop');
 
         // ビューにデータを渡す
-        return view('my_page', compact('name'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop'));
     }
 }
