@@ -48,7 +48,7 @@
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
-      <i class="fa-solid fa-heart" data-name="仙人" data-image="img/sushi.jpg" data-city="東京都" data-shop="寿司"></i>
+      <i class="fa-solid fa-heart" ></i>
       
     </div>
   </div>
@@ -328,65 +328,4 @@
   </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const hearts = document.querySelectorAll('.fa-heart');
-
-    hearts.forEach(function(heart) {
-        heart.addEventListener('click', function() {
-            // ハートアイコンの色（クラス）を切り替える
-            this.classList.toggle('active-heart');
-
-            // データ属性から値を取得
-            const name = this.getAttribute('data-name');
-            const image = this.getAttribute('data-image');
-            const city = this.getAttribute('data-city');
-            const shop = this.getAttribute('data-shop');
-
-            if (this.classList.contains('active-heart')) {
-                // ハートが赤い場合（active-heartクラスがある場合）は値を送信
-                sendData(name, image, city, shop);
-            } else {
-                // ハートが黒い場合（active-heartクラスがない場合）は値を削除
-                deleteData(name, image, city, shop);
-            }
-        });
-    });
-});
-
-function sendData(name, image, city, shop) {
-    console.log('Sending data:', name, image, city, shop);
-    fetch('/shop_all/shop_detail/my_page', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-        },
-        body: JSON.stringify({
-            name: name,
-            image: image,
-            city: city,
-            shop: shop
-        })
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-}
-
-function deleteData(name, image, city, shop) {
-    // ここに値を削除するためのFetch APIのコードを記述
-    console.log('Deleting data:', name, image, city, shop);
-    fetch('/shop_all/shop_detail/my_page', { ... });
-}
-</script>
 @endsection
