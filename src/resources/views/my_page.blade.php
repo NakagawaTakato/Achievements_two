@@ -10,9 +10,7 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
 
-    <!-- <h1>{{ $name }}</h1>
-    <img src="{{ asset($image) }}" alt="" />
-    <p>{{ $city }} - {{ $shop }}</p> -->
+    <h1>{{ $name }}</h1>
 
 
     <div class="container-box">
