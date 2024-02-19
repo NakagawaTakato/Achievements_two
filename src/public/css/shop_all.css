@@ -222,6 +222,7 @@
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
+    border: none;
 }
 
 .fa-solid.fa-heart {
