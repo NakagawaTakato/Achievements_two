@@ -17,12 +17,19 @@
                 <a href="http://localhost/shop_all" ><i class="fa-solid fa-less-than"></i></a>
             </div>
 
-            <h1>{{ $name }}</h1>
+            <div class="container-group-unit-title">
+                <h1>{{ $name }}</h1>
+            </div>
 
+            <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
+            <p>#{{ $city }} #{{ $shop }}</p>
+
+            </br>
+            <p>料理長厳選の食材から作る寿司を用いたコースをぜひお楽しみください。食</br>
+            材・味・価格、お客様の満足度を徹底的に追及したお店です。特別な日のお食</br>
+            事、ビジネス接待まで気軽に使用することができます。</p>
 
         </div>
-        <img src="{{ asset($image) }}" alt="" />
-        <p>{{ $city }} - {{ $shop }}</p>
     </div>
 </div>
 <script>
