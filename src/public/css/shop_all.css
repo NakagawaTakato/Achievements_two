@@ -195,6 +195,8 @@
     position: absolute;
     top: 135px;
     width: 100%;
+    width: 248px;
+    height: 120px;
     background-color: #FFFFFF;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -225,7 +227,16 @@
     border: none;
 }
 
+.wrapper-box-content-heart {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+    width: 40px;
+    height: 40px;
+}
+
 .fa-solid.fa-heart {
-    margin-left: 85px;
     font-size: 24px;
 }

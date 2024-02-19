@@ -7,19 +7,22 @@
 
 @section('content')
 <div class="container">
-    <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
-    <p class="container-text">Rese</p>
-
-    <h1>{{ $name }}</h1>
-    <img src="{{ asset($image) }}" alt="" />
-    <p>{{ $city }} - {{ $shop }}</p>
+    <div class="container-group">
+        <a href="#" class="container-group-exit"><i class="fa-solid fa-bars"></i></a>
+        <p class="container-group-text">Rese</p>
 
 
-    <div class="container-box">
-        <div class="container-box-name">
-            
+        <div class="container-group-unit">
+            <div class="container-group-unit-return">
+                <a href="http://localhost/shop_all" ><i class="fa-solid fa-less-than"></i></a>
+            </div>
+
+            <h1>{{ $name }}</h1>
+
+
         </div>
-
+        <img src="{{ asset($image) }}" alt="" />
+        <p>{{ $city }} - {{ $shop }}</p>
     </div>
 </div>
 <script>

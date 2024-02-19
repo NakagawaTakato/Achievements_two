@@ -1,12 +1,12 @@
 .container {
+    background-color: #EEEEEE;
+}
+
+.container-group {
     margin: 50px 0px 0px 100px;
 }
 
-.container-text {
-    margin: -27px 0px 0px 50px;
-}
-
-.container-exit {
+.container-group-exit {
     color: white;
     background-color: #305DFF;
     text-decoration: none;
@@ -17,7 +17,10 @@
     text-align: center;
 }
 
-.container-text {
+.container-group-text {
+    margin: -27px 0px 0px 50px;
     color: #305DFF;
     font-weight: bold;
 }
+
+.container-group-unit-return {}

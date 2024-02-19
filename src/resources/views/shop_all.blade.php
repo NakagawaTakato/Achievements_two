@@ -48,16 +48,14 @@
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
-      <div class="wrapper-box-content-heart">
-        <form action="/my_page" method="POST" >
-          @csrf
-          <input type="hidden" name="name" value="仙人">
-          <input type="hidden" name="image" value="img/sushi.jpg">
-          <input type="hidden" name="city" value="東京都">
-          <input type="hidden" name="shop" value="寿司">
-          <button type="submit"><i class="fa-solid fa-heart"></i></button>
-        </form>
-      </div>
+      <form action="/my_page" method="POST" >
+        @csrf
+        <input type="hidden" name="name" value="仙人">
+        <input type="hidden" name="image" value="img/sushi.jpg">
+        <input type="hidden" name="city" value="東京都">
+        <input type="hidden" name="shop" value="寿司">
+        <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
+      </form>
       
     </div>
   </div>
