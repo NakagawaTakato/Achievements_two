@@ -25,8 +25,12 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
 
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
+
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
     }
 
     public function my_page(Request $request)
@@ -36,7 +40,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
 
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
+
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop'));
+        return view('my_page', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
     }
 }
