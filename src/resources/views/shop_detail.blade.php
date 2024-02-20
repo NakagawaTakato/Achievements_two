@@ -38,8 +38,11 @@
             <input type="text" name="date" placeholder="日付を入力">
             <input type="text" name="time" placeholder="時間を入力">
             <input type="number" name="number" placeholder="人数を入力">
+            
             <button type="submit">予約する</button>
         </form>
+
+        </div>
     </div>
 </div>
 <script>
