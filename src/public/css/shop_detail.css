@@ -1,11 +1,12 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     background-color: #EEEEEE;
+    gap: -20px;
 }
 
 .container-group {
-    width: 70%;
     position: relative;
     top: 50px;
     left: 50px;
@@ -50,5 +51,12 @@
 }
 
 .container-box {
-    width: 30%;
+    margin-top: 80px;
+    background-color: #305DFF;
+    width: 500px;
+    height: 500px;
+}
+
+.container-box-text {
+    color: #FFFFFF;
 }

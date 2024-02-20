@@ -27,12 +27,11 @@
             <p>料理長厳選の食材から作る寿司を用いたコースをぜひお楽しみください。食</br>
             材・味・価格、お客様の満足度を徹底的に追及したお店です。特別な日のお食</br>
             事、ビジネス接待まで気軽に使用することができます。</p>
-
         </div>
     </div>
 
     <div class="container-box">
-        <p>aaaaaaa</p>
+        <h1 class="container-box-text">予約</h1>
     </div>
 </div>
 <script>
