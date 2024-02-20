@@ -32,6 +32,7 @@
 
     <div class="container-box">
         <h1 class="container-box-text">予約</h1>
+        
     </div>
 </div>
 <script>
