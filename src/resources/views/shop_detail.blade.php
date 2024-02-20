@@ -11,7 +11,6 @@
         <a href="#" class="container-group-exit"><i class="fa-solid fa-bars"></i></a>
         <p class="container-group-text">Rese</p>
 
-
         <div class="container-group-unit">
             <div class="container-group-unit-return">
                 <a href="http://localhost/shop_all" ><i class="fa-solid fa-less-than"></i></a>
@@ -30,6 +29,10 @@
             事、ビジネス接待まで気軽に使用することができます。</p>
 
         </div>
+    </div>
+
+    <div class="container-box">
+        <p>aaaaaaa</p>
     </div>
 </div>
 <script>
