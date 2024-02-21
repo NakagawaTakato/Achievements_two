@@ -21,11 +21,6 @@
         <img src="{{ asset($shop->image) }}" alt="">
         <p>{{ $shop->city }}</p>
         <p>{{ $shop->shop }}</p>
-        <form action="/shop_all/shop_detail/my_page" method="post">
-            @csrf
-            @method('DELETE')
-            <button type="submit">Delete</button>
-        </form>
     @endforeach
 
     <form action="/shop_all" method="post">
