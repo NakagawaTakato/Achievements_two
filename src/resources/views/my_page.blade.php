@@ -16,9 +16,12 @@
     <p>{{ $number }}</p>
 
 
-    <h1>{{ $name }}</h1>
-    <img src="{{ asset($image) }}" alt="" />
-    <p>{{ $city }} - {{ $shop }}</p>
+    @foreach ($shops as $shop)
+        <p>{{ $shop->name }}</p>
+        <img src="{{ asset($shop->image) }}" alt="">
+        <p>{{ $shop->city }}</p>
+        <p>{{ $shop->shop }}</p>
+    @endforeach
 
     <form action="/shop_all" method="post">
         @csrf

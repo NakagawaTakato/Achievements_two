@@ -62,14 +62,13 @@
     </div>
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var closeButton = document.querySelector('.container-exit');
-        var containerGroup = document.querySelector('.container-group');
+document.addEventListener('DOMContentLoaded', function() {
+    var closeButton = document.querySelector('.container-exit');
+    var containerGroup = document.querySelector('.container-group');
 
-        closeButton.addEventListener('click', function(event) {
-            event.preventDefault();
-            containerGroup.style.display = 'none';
-        });
+    closeButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        containerGroup.style.display = 'none';
     });
 });
 </script>

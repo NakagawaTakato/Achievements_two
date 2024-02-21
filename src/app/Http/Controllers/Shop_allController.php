@@ -35,16 +35,24 @@ class Shop_allController extends Controller
 
     public function my_page(Request $request)
     {
-        $name = $request->input('name');
-        $image = $request->input('image');
-        $city = $request->input('city');
-        $shop = $request->input('shop');
+        $shop = new Shop;
+        $shop->name = $request->input('name');
+        $shop->image = $request->input('image');
+        $shop->city = $request->input('city');
+        $shop->shop = $request->input('shop');
+        $shop->save();
 
         $date = $request->input('date');
         $time = $request->input('time');
         $number = $request->input('number');
 
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
+        return view('my_page', compact('shop', 'date', 'time', 'number'));
+    }
+
+    public function showShops()
+    {
+        $shops = Shop::all();
+        return view('shops', compact('shops'));
     }
 }
