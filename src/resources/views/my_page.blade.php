@@ -10,17 +10,24 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
     
-    
+
+    <h1>{{ $date }}</h1>
+    <p>{{ $time }}</p>
+    <p>{{ $number }}</p>
+
+
     <h1>{{ $name }}</h1>
     <img src="{{ asset($image) }}" alt="" />
     <p>{{ $city }} - {{ $shop }}</p>
-
 
     <form action="/shop_all" method="post">
         @csrf
         @method('DELETE')
         <button type="submit">Delete</button>
     </form>
+
+
+
 
     <a href="http://localhost/shop_all" >もどる</a>
 
