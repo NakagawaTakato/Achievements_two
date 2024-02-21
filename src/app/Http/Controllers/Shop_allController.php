@@ -47,8 +47,10 @@ class Shop_allController extends Controller
         $time = $request->input('time');
         $number = $request->input('number');
 
+        $shops = Shop::all();
+
         // ビューにデータを渡す
-        return view('my_page', compact('shop', 'date', 'time', 'number'));
+        return view('my_page', compact('shop', 'date', 'time', 'number', 'shops'));
     }
 
     public function showShops()
