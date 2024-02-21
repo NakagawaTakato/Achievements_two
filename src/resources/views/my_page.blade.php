@@ -17,10 +17,17 @@
 
 
     @foreach ($shops as $shop)
-        <p>{{ $shop->name }}</p>
-        <img src="{{ asset($shop->image) }}" alt="">
-        <p>{{ $shop->city }}</p>
-        <p>{{ $shop->shop }}</p>
+        @if ($loop->iteration <= 5)
+            <p>{{ $shop->name }}</p>
+            <img src="{{ asset($shop->image) }}" alt="">
+            <p>{{ $shop->city }}</p>
+            <p>{{ $shop->shop }}</p>
+            <form action="/shop_all/shop_detail/my_page" method="post">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Delete</button>
+            </form>
+        @endif
     @endforeach
 
     <form action="/shop_all" method="post">
