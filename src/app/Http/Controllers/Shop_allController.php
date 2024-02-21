@@ -36,6 +36,11 @@ class Shop_allController extends Controller
 
     public function my_page(Request $request)
     {
+        $validated = $request->validate([
+            'name' => 'required', // nameが必須であることを指定
+            // 他のフィールドに対するバリデーションルールもここに追加
+        ]);
+
         $shop = new Shop;
         $shop->name = $request->input('name');
         $shop->image = $request->input('image');

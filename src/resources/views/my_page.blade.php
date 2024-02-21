@@ -26,7 +26,6 @@
             @method('DELETE')
             <button type="submit">Delete</button>
         </form>
-        @endif
     @endforeach
 
     <form action="/shop_all" method="post">
