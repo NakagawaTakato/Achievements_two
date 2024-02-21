@@ -22,4 +22,4 @@ Route::get('/shop_all', [Shop_allController::class, 'shop_all']);
 Route::delete('/shop_all', [Shop_allController::class, 'shop_all']);
 Route::post('/shop_all/shop_detail', [Shop_allController::class, 'shop_detail']);
 Route::post('/shop_all/shop_detail/my_page', [Shop_allController::class, 'my_page']);
-Route::get('/shop_all/shop_detail/my_page', [Shop_allController::class, 'my_page']);
+Route::delete('/shop_all/shop_detail/my_page', [Shop_allController::class, 'my_page']);
