@@ -38,22 +38,22 @@
             <input type="date" name="date" required>
             <select class="container-group-bar-dropdown" name="time">
                 <option value="" disabled selected hidden>00:00</option>
-                <option value="product_exchange">17:00</option>
-                <option value="product_exchange">18:00</option>
-                <option value="product_exchange">19:00</option>
-                <option value="product_exchange">20:00</option>
-                <option value="product_exchange">21:00</option>
-                <option value="product_exchange">22:00</option>
-                <option value="product_exchange">23:00</option>
-                <option value="product_exchange">24:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+                <option value="23:00">23:00</option>
+                <option value="24:00">24:00</option>
             </select>
             <select class="container-group-bar-dropdown" name="number">
-                <option value="" disabled selected hidden>0人</option>
-                <option value="product_exchange">1人</option>
-                <option value="product_exchange">2人</option>
-                <option value="product_exchange">3人</option>
-                <option value="product_exchange">4人</option>
-                <option value="product_exchange">5人</option>
+                <option value="0人" disabled selected hidden>0人</option>
+                <option value="1人">1人</option>
+                <option value="2人">2人</option>
+                <option value="3人">3人</option>
+                <option value="4人">4人</option>
+                <option value="5人">5人</option>
             </select>
 
             <button type="submit">予約する</button>
