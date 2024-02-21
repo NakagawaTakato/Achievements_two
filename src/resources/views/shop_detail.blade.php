@@ -35,14 +35,31 @@
         
         <form action="/shop_all/shop_detail/my_page" method="post">
             @csrf
-            <input type="text" name="date" placeholder="日付を入力">
-            <input type="text" name="time" placeholder="時間を入力">
-            <input type="number" name="number" placeholder="人数を入力">
-            
+            <select class="container-group-bar-dropdown" name="area">
+                <option value="" disabled selected hidden>All area</option>
+                <option value="product_exchange">商品の交換について</option>
+            </select>
+            <select class="container-group-bar-dropdown" name="time">
+                <option value="" disabled selected hidden>17:00</option>
+                <option value="product_exchange">18:00</option>
+                <option value="product_exchange">19:00</option>
+                <option value="product_exchange">20:00</option>
+                <option value="product_exchange">21:00</option>
+                <option value="product_exchange">22:00</option>
+                <option value="product_exchange">23:00</option>
+                <option value="product_exchange">24:00</option>
+            </select>
+            <select class="container-group-bar-dropdown" name="area">
+                <option value="" disabled selected hidden>1人</option>
+                <option value="product_exchange">2人</option>
+                <option value="product_exchange">3人</option>
+                <option value="product_exchange">4人</option>
+                <option value="product_exchange">5人</option>
+            </select>            
+
             <button type="submit">予約する</button>
         </form>
 
-        </div>
     </div>
 </div>
 <script>
@@ -55,5 +72,6 @@
             containerGroup.style.display = 'none';
         });
     });
+});
 </script>
 @endsection
