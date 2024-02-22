@@ -21,10 +21,10 @@ class Shop_allController extends Controller
 
     public function shop_detail(Request $request)
     {
-        $request->session()->put('name', $request->input('name'));
-        $request->session()->put('image', $request->input('image'));
-        $request->session()->put('city', $request->input('city'));
-        $request->session()->put('shop', $request->input('shop'));
+        $name = $request->input('name');
+        $image = $request->input('image');
+        $city = $request->input('city');
+        $shop = $request->input('shop');
 
         $date = $request->input('date');
         $time = $request->input('time');
@@ -36,18 +36,31 @@ class Shop_allController extends Controller
 
     public function my_page(Request $request)
     {
-        $name = $request->session()->get('name');
-        $image = $request->session()->get('image');
-        $city = $request->session()->get('city');
-        $shop = $request->session()->get('shop');
+        $validated = $request->validate([
+            'name' => 'required', // nameが必須であることを指定
+            // 他のフィールドに対するバリデーションルールもここに追加
+        ]);
+
+        $shop = new Shop;
+        $shop->name = $request->input('name');
+        $shop->image = $request->input('image');
+        $shop->city = $request->input('city');
+        $shop->shop = $request->input('shop');
+        $shop->save();
 
         $date = $request->input('date');
         $time = $request->input('time');
         $number = $request->input('number');
 
+        $shops = Shop::all();
 
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop'));
+        return view('my_page', compact('shop', 'date', 'time', 'number', 'shops'));
     }
 
+    public function showShops()
+    {
+        $shops = Shop::all();
+        return view('shops', compact('shops'));
+    }
 }
