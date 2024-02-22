@@ -16,12 +16,10 @@
     <p>{{ $number }}</p>
 
 
-    @foreach ($shops as $shop)
-        <p>{{ $shop->name }}</p>
-        <img src="{{ asset($shop->image) }}" alt="">
-        <p>{{ $shop->city }}</p>
-        <p>{{ $shop->shop }}</p>
-    @endforeach
+    <p>{{ session('name') }}</p>
+    <img src="{{ asset(session('image')) }}" alt="">
+    <p>{{ session('city') }}</p>
+    <p>{{ session('shop') }}</p>
 
     <form action="/shop_all" method="post">
         @csrf
