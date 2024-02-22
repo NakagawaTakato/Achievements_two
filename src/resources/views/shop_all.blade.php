@@ -48,7 +48,7 @@
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
-      <form action="/shop_all/shop_detail/my_page" method="POST" >
+      <form action="/my_page" method="POST" >
         @csrf
         <input type="hidden" name="name" value="仙人">
         <input type="hidden" name="image" value="img/sushi.jpg">
