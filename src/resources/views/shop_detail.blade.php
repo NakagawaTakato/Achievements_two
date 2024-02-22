@@ -56,10 +56,6 @@
                 <option value="5人">5人</option>
             </select>
 
-            <input type="hidden" name="name" value="{{ $name }}">
-            <input type="hidden" name="image" value="{{ $image }}">
-            <input type="hidden" name="city" value="{{ $city }}">
-            <input type="hidden" name="shop" value="{{ $shop }}">
             <button type="submit">予約する</button>
         </form>
 
