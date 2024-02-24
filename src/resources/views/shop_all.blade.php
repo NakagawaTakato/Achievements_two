@@ -16,13 +16,19 @@
             <form class="container-group-bar" action="/search" method="get">
                 <select class="container-group-bar-dropdown" name="area">
                     <option value="" disabled selected hidden>All area</option>
-                    <option value="product_exchange">商品の交換について</option>
+                    <option value="product_exchange">東京都</option>
+                    <option value="product_exchange">大阪府</option>
+                    <option value="product_exchange">福岡県</option>
                 </select>
                 <select class="container-group-bar-dropdown" name="genre">
                     <option value="" disabled selected hidden>All genre</option>
-                    <option value="product_exchange">商品の交換について</option>
+                    <option value="product_exchange">寿司</option>
+                    <option value="product_exchange">焼肉</option>
+                    <option value="product_exchange">居酒屋</option>
+                    <option value="product_exchange">イタリアン</option>
+                    <option value="product_exchange">ラーメン</option>
                 </select>
-                <input type="text" class="container-group-bar-input" name="query" placeholder="🔍Search ..." required>
+                <button class="container-group-bar-input" ><i class="fa-solid fa-magnifying-glass"></i>Search ...</button>
             </form>
         </div>
     </div>

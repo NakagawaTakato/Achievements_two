@@ -51,7 +51,9 @@
 .container-group-bar-input {
     flex-grow: 1;
     border: none;
+    background-color: #FFFFFF;
 }
+
 
 .wrapper {
     display: grid;

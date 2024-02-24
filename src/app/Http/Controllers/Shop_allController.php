@@ -36,26 +36,18 @@ class Shop_allController extends Controller
 
     public function my_page(Request $request)
     {
-        $validated = $request->validate([
-            'name' => 'required', // nameが必須であることを指定
-            // 他のフィールドに対するバリデーションルールもここに追加
-        ]);
-
-        $shop = new Shop;
-        $shop->name = $request->input('name');
-        $shop->image = $request->input('image');
-        $shop->city = $request->input('city');
-        $shop->shop = $request->input('shop');
-        $shop->save();
+        $name = $request->input('name');
+        $image = $request->input('image');
+        $city = $request->input('city');
+        $shop = $request->input('shop');
 
         $date = $request->input('date');
         $time = $request->input('time');
         $number = $request->input('number');
 
-        $shops = Shop::all();
 
         // ビューにデータを渡す
-        return view('my_page', compact('shop', 'date', 'time', 'number', 'shops'));
+        return view('my_page', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
     }
 
     public function showShops()
