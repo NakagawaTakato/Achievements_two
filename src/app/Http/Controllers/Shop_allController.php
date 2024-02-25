@@ -4,19 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Shop;
+use App\Models\Author;
 
 
 class Shop_allController extends Controller
 {
     public function shop_all(Request $request)
     {
-        $name = $request->query('name');
-        $image = $request->query('image');
-        $city = $request->query('city');
-        $shop = $request->query('shop');
+        $authors = Author::all();
 
         // ビューにデータを渡す
-        return view('shop_all', compact('name', 'image', 'city', 'shop'));
+        return view('shop_all', ['authors' => $authors]);
     }
 
     public function shop_detail(Request $request)
