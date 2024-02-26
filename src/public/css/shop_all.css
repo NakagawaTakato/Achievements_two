@@ -189,6 +189,8 @@
 
 .wrapper-box-img img {
     width: 100%;
+    max-width: 248px;
+    height: auto;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
