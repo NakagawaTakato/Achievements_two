@@ -35,6 +35,7 @@
   </div>
 
   @foreach ($authors as $author)
+  <div class="wrapper">
     <div class="wrapper-box">
       <div class="wrapper-box-img">
         <img src="{{ $author->image }}" alt="" />
@@ -53,6 +54,7 @@
         </form>
       </div>
     </div>
+  </div>
   @endforeach
 @endsection
 
