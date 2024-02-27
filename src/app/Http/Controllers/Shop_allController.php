@@ -13,9 +13,10 @@ class Shop_allController extends Controller
     public function shop_all(Request $request)
     {
         $authors = Author::all();
+        $categories = Category::all();
 
         // ビューにデータを渡す
-        return view('shop_all', ['authors' => $authors]);
+        return view('shop_all', ['authors' => $authors, 'categories' => $categories]);
     }
 
     public function shop_detail(Request $request)
