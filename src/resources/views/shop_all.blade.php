@@ -22,11 +22,9 @@
                 </select>
                 <select class="container-group-bar-dropdown" name="genre">
                     <option value="" disabled selected hidden>All genre</option>
-                    <option value="product_exchange">寿司</option>
-                    <option value="product_exchange">焼肉</option>
-                    <option value="product_exchange">居酒屋</option>
-                    <option value="product_exchange">イタリアン</option>
-                    <option value="product_exchange">ラーメン</option>
+                    @foreach($categories as $category)
+                    <option value="product_exchange">{{$category->content}}</option>
+                    @endforeach
                 </select>
                 <button class="container-group-bar-input" ><i class="fa-solid fa-magnifying-glass"></i>Search ...</button>
             </form>
