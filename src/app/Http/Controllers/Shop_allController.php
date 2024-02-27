@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Shop;
 use App\Models\Author;
+use App\Models\Category;
 
 
 class Shop_allController extends Controller
