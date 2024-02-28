@@ -14,6 +14,6 @@ class SearchTableSeeder extends Seeder
      */
     public function run()
     {
-        Contact::factory()->count(35)->create();
+        Search::factory()->count(35)->create();
     }
 }
