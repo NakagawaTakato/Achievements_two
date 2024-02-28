@@ -13,7 +13,7 @@ class CreateSearchTable extends Migration
      */
     public function up()
     {
-        Schema::create('searches', function (Blueprint $table) {
+        Schema::create('search', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->tinyInteger('gender');

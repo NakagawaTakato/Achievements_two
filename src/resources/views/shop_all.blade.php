@@ -16,14 +16,16 @@
             <form class="container-group-bar" action="/search" method="get">
                 <select class="container-group-bar-dropdown" name="area">
                     <option value="" disabled selected hidden>All area</option>
-                    <option value="product_exchange">東京都</option>
-                    <option value="product_exchange">大阪府</option>
-                    <option value="product_exchange">福岡県</option>
+                    <option value="1" @if( request('gender')==1 ) selected @endif>東京都</option>
+                    <option value="2" @if( request('gender')==2 ) selected @endif>大阪府</option>
+                    <option value="3" @if( request('gender')==3 ) selected @endif>福岡県</option>
                 </select>
                 <select class="container-group-bar-dropdown" name="genre">
                     <option value="" disabled selected hidden>All genre</option>
                     @foreach($categories as $category)
-                    <option value="product_exchange">{{$category->content}}</option>
+                    <option value="{{ $category->id }}" @if( request('category_id')==$category->id )    selected @endif
+                      >{{$category->content }}
+                    </option>
                     @endforeach
                 </select>
                 <button class="container-group-bar-input" ><i class="fa-solid fa-magnifying-glass"></i>Search ...</button>
@@ -42,7 +44,7 @@
       <h2 class="wrapper-box-content-ttl">
         {{$author->name}}
       </h2>
-      <p class="wrapper-box-content-text">#{{$author->city}} #{{$author->shop}}</p>
+      <p class="wrapper-box-content-text">#{{$author->city}} #{{$contact->category->content}}</p>
       <form action="/shop_all/shop_detail" method="POST" >
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
