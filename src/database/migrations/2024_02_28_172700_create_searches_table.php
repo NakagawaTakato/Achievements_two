@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSearchTable extends Migration
+class CreateSearchesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,6 @@ class CreateSearchTable extends Migration
     {
         Schema::create('searches', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            $table->tinyInteger('gender');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ class CreateSearchTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('search');
+        Schema::dropIfExists('searches');
     }
 }
