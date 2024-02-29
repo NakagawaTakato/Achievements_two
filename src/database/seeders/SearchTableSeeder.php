@@ -16,5 +16,6 @@ class SearchTableSeeder extends Seeder
     public function run()
     {
         Search::factory()->count(35)->create();
+        Author::factory()->count(35)->create();
     }
 }
