@@ -44,7 +44,7 @@
       <h2 class="wrapper-box-content-ttl">
         {{$author->name}}
       </h2>
-      <p class="wrapper-box-content-text">#{{$author->city}} #{{$contact->category->content}}</p>
+      <p class="wrapper-box-content-text">#{{$author->city}} #{{$author->category->content}}</p>
       <form action="/shop_all/shop_detail" method="POST" >
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
