@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Search;
+use App\Models\Author;
 use Illuminate\Database\Seeder;
 
 class SearchTableSeeder extends Seeder
