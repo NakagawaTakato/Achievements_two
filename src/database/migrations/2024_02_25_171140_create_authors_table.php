@@ -20,6 +20,7 @@ class CreateAuthorsTable extends Migration
             $table->string('image', 100);
             $table->string('city', 100);
             $table->string('shop', 100);
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->timestamp('created_at')->useCurrent()->nullable();
             $table->timestamp('updated_at')->useCurrent()->nullable();
         });
