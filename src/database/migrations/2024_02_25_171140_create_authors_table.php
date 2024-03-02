@@ -15,15 +15,14 @@ class CreateAuthorsTable extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
+            $table->tinyInteger('gender');
             $table->string('class-name', 100);
             $table->string('name', 100);
             $table->string('image', 100);
             $table->string('city', 100);
             $table->string('shop', 100);
-            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            $table->tinyInteger('gender');
-            $table->timestamp('created_at')->useCurrent()->nullable();
-            $table->timestamp('updated_at')->useCurrent()->nullable();
+            $table->timestamps();
         });
     }
 
