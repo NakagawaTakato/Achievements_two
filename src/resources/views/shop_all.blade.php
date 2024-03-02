@@ -45,13 +45,7 @@
         {{$author->name}}
       </h2>
       <p class="wrapper-box-content-text">#{{$author->city}}</p>
-      <p class="wrapper-box-content-text-categories">
-        @foreach($categories as $category)
-          @if($author->category_id == $category->id)
-            #{{$category->content}}
-          @endif
-        @endforeach
-      </p>
+      <p class="wrapper-box-content-text-categories">#{{$author->shop}}</p>
       <form action="/shop_all/shop_detail" method="POST" >
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>

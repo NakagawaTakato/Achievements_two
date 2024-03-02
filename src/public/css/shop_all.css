@@ -218,6 +218,11 @@
     margin: 0px 0px 10px 10px;
 }
 
+.wrapper-box-content-text-categories {
+    font-size: 13px;
+    margin: -30px 0px 10px 70px;
+}
+
 .wrapper-box-content-cat {
     margin-left: 10px;
     font-size: 15px;
@@ -236,7 +241,7 @@
     border: none;
     position: absolute;
     bottom: 10px;
-    left: 170px;
+    left: 180px;
     width: 40px;
     height: 40px;
 }

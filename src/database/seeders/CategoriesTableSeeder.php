@@ -19,7 +19,7 @@ class CategoriesTableSeeder extends Seeder
             "焼肉",
             "居酒屋",
             "イタリアン",
-            "ラーメン"
+            "ラーメン",
         ];
 
         foreach ($contents as $content) {
