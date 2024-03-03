@@ -20,7 +20,7 @@
                     <option value="2" @if( request('gender')==2 ) selected @endif>大阪府</option>
                     <option value="3" @if( request('gender')==3 ) selected @endif>福岡県</option>
                 </select>
-                <select class="container-group-bar-dropdown" name="genre">
+                <select class="container-group-bar-dropdown" name="category_id">
                     <option value="" disabled selected hidden>All genre</option>
                     @foreach($categories as $category)
                     <option value="{{ $category->id }}" @if( request('category_id')==$category->id )    selected @endif
@@ -28,7 +28,7 @@
                     </option>
                     @endforeach
                 </select>
-                <button class="container-group-bar-input" ><i class="fa-solid fa-magnifying-glass"></i>Search ...</button>
+                <button class="container-group-bar-input" type="submit" value="検索"><i class="fa-solid fa-magnifying-glass"></i>Search ...</button>
             </form>
         </div>
     </div>
@@ -36,7 +36,7 @@
 
 <div class="wrapper">
   @foreach ($authors as $author)
-  <div class="{{ $author->{'class-name'} }}">
+  <div class="{{ $author->{'class-name'} }}" id="{{$author->id}}">
     <div class="wrapper-box-img">
       <img src="{{ $author->image }}" alt="" />
     </div>
@@ -44,8 +44,18 @@
       <h2 class="wrapper-box-content-ttl">
         {{$author->name}}
       </h2>
-      <p class="wrapper-box-content-text">#{{$author->city}}</p>
-      <p class="wrapper-box-content-text-categories">#{{$author->shop}}</p>
+      <p class="wrapper-box-content-text">
+          @if($author->gender == 1)
+          東京都
+          @elseif($author->gender == 2)
+          大阪府
+          @else
+          福岡県
+          @endif
+      </p>
+      <p class="wrapper-box-content-text-categories">
+        #{{$author->category->content}}
+      </p>
       <form action="/shop_all/shop_detail" method="POST" >
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
