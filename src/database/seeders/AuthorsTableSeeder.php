@@ -15,7 +15,6 @@ class AuthorsTableSeeder extends Seeder
      */
     public function run()
     {
-    Author::factory()->count(35)->create();
 
     $param = [
         'category_id' => 1,
@@ -54,7 +53,7 @@ class AuthorsTableSeeder extends Seeder
         'image' => 'img/izakaya.jpg',
         'city' => '東京都',
         'shop' => 'イタリアン',
-        'gender' => 4
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
 
@@ -65,52 +64,52 @@ class AuthorsTableSeeder extends Seeder
         'image' => 'img/ramen.jpg',
         'city' => '福岡県',
         'shop' => 'ラーメン',
-        'gender' => 5
+        'gender' => 3
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 6,
+        'category_id' => 2,
         'class-name' => 'wrapper-box_six',
         'name' => '香',
         'image' => 'img/yakiniku.jpg',
         'city' => '東京都',
         'shop' => '焼肉',
-        'gender' => 2
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 7,
+        'category_id' => 4,
         'class-name' => 'wrapper-box_seven',
         'name' => 'JJ',
         'image' => 'img/italian.jpg',
         'city' => '大阪府',
         'shop' => 'イタリアン',
-        'gender' => 4
+        'gender' => 2
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 8,
+        'category_id' => 5,
         'class-name' => 'wrapper-box_eight',
         'name' => 'ラーメンの極み',
         'image' => 'img/ramen.jpg',
         'city' => '東京都',
         'shop' => 'ラーメン',
-        'gender' => 5
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
 
     $param = [
-        'category_id' => 9,
+        'category_id' => 3,
         'class-name' => 'wrapper-box_nine',
         'name' => '鳥雨',
         'image' => 'img/izakaya.jpg',
         'city' => '大阪府',
         'shop' => '居酒屋',
-        'gender' => 3
+        'gender' => 2
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 10,
+        'category_id' => 1,
         'class-name' => 'wrapper-box_ten',
         'name' => '築地色合',
         'image' => 'img/sushi.jpg',
@@ -120,7 +119,7 @@ class AuthorsTableSeeder extends Seeder
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 11,
+        'category_id' => 2,
         'class-name' => 'wrapper-box_eleven',
         'name' => '晴海',
         'image' => 'img/yakiniku.jpg',
@@ -130,59 +129,59 @@ class AuthorsTableSeeder extends Seeder
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 12,
+        'category_id' => 2,
         'class-name' => 'wrapper-box_twelve',
         'name' => '三子',
         'image' => 'img/yakiniku.jpg',
         'city' => '福岡県',
         'shop' => '焼肉',
-        'gender' => 2
+        'gender' => 3
     ];
     DB::table('authors')->insert($param);
 
     $param = [
-        'category_id' => 13,
+        'category_id' => 3,
         'class-name' => 'wrapper-box_thirteen',
         'name' => '八戒',
         'image' => 'img/izakaya.jpg',
         'city' => '東京都',
         'shop' => '居酒屋',
-        'gender' => 3
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 14,
+        'category_id' => 1,
         'class-name' => 'wrapper-box_fourteen',
         'name' => '福助',
         'image' => 'img/sushi.jpg',
         'city' => '大阪府',
         'shop' => '寿司',
-        'gender' => 1
+        'gender' => 2
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 15,
+        'category_id' => 5,
         'class-name' => 'wrapper-box_fifteen',
         'name' => 'ラー北',
         'image' => 'img/ramen.jpg',
         'city' => '東京都',
         'shop' => 'ラーメン',
-        'gender' => 5
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 16,
+        'category_id' => 3,
         'class-name' => 'wrapper-box_sixteen',
         'name' => '翔',
         'image' => 'img/izakaya.jpg',
         'city' => '大阪府',
         'shop' => '居酒屋',
-        'gender' => 3
+        'gender' => 2
     ];
     DB::table('authors')->insert($param);
 
     $param = [
-        'category_id' => 17,
+        'category_id' => 1,
         'class-name' => 'wrapper-box_seventeen',
         'name' => '経緯',
         'image' => 'img/sushi.jpg',
@@ -192,33 +191,33 @@ class AuthorsTableSeeder extends Seeder
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 18,
+        'category_id' => 2,
         'class-name' => 'wrapper-box_eighteen',
         'name' => '漆',
         'image' => 'img/yakiniku.jpg',
         'city' => '東京都',
         'shop' => '焼肉',
-        'gender' => 2
+        'gender' => 1
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 19,
+        'category_id' => 4,
         'class-name' => 'wrapper-box_nineteen',
         'name' => 'THE TOOL',
         'image' => 'img/italian.jpg',
         'city' => '福岡県',
         'shop' => 'イタリアン',
-        'gender' => 4
+        'gender' => 3
     ];
     DB::table('authors')->insert($param);
     $param = [
-        'category_id' => 20,
+        'category_id' => 1,
         'class-name' => 'wrapper-box_twenty',
         'name' => '木船',
         'image' => 'img/sushi.jpg',
         'city' => '大阪府',
         'shop' => '寿司',
-        'gender' => 1
+        'gender' => 2
     ];
     DB::table('authors')->insert($param);
     }
