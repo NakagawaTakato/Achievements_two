@@ -37,8 +37,13 @@
 @php
   $keep = null;
   $judge = false;
+  $first = true;
 @endphp
 <div class="wrapper">
+  @if($first == true)
+    $keep = $author->{'class-name'};
+    $first = false;
+  @endif
   @foreach ($authors as $author)
   @if($judge == true)
     @php
@@ -48,7 +53,7 @@
   @php
     $judge = false;
   @endphp
-  <div class="{{ $author->{'class-name'} }}" id="{{$author->id}}">
+  <div class="{{ $keep }}" id="{{$author->id}}">
     <div class="wrapper-box-img">
       <img src="{{ $author->image }}" alt="" />
     </div>
@@ -57,22 +62,22 @@
         {{$author->name}}
       </h2>
       <p class="wrapper-box-content-text">
-          @if($author->gender == 1)
-            #東京都
-            @php
-              $judge = true;
-            @endphp
-          @elseif($author->gender == 2)
-            #大阪府
-            @php
-             $judge = true;
-            @endphp
-          @else
-            #福岡県
-            @php
-              $judge = true;
-            @endphp
-          @endif
+      @if($author->gender == 1)
+        #東京都
+        @php
+          $judge = true;
+        @endphp
+      @elseif($author->gender == 2)
+        #大阪府
+        @php
+          $judge = true;
+        @endphp
+      @else
+        #福岡県
+        @php
+          $judge = true;
+        @endphp
+      @endif
       </p>
       <p class="wrapper-box-content-text-categories">
         #{{$author->category->content}}
