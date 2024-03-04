@@ -40,17 +40,15 @@
   $first = true;
 @endphp
 <div class="wrapper">
-  @if($first == true)
-    $keep = $author->{'class-name'};
-    $first = false;
-  @endif
   @foreach ($authors as $author)
-  @if($judge == true)
-    @php
-      $keep = $author->{'class-name'};
-    @endphp
-  @endif
   @php
+    if($first == true) {
+      $keep = $author->{'class-name'};
+      $first = false;
+    }
+    if($judge == true) {
+      $keep = $author->{'class-name'};
+    }
     $judge = false;
   @endphp
   <div class="{{ $keep }}" id="{{$author->id}}">
