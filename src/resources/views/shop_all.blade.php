@@ -34,8 +34,20 @@
     </div>
 </div>
 
+@php
+  $keep = null;
+  $judge = false;
+@endphp
 <div class="wrapper">
   @foreach ($authors as $author)
+  @if($judge == true)
+    @php
+      $keep = $author->{'class-name'};
+    @endphp
+  @endif
+  @php
+    $judge = false;
+  @endphp
   <div class="{{ $author->{'class-name'} }}" id="{{$author->id}}">
     <div class="wrapper-box-img">
       <img src="{{ $author->image }}" alt="" />
@@ -46,11 +58,20 @@
       </h2>
       <p class="wrapper-box-content-text">
           @if($author->gender == 1)
-          #東京都
+            #東京都
+            @php
+              $judge = true;
+            @endphp
           @elseif($author->gender == 2)
-          #大阪府
+            #大阪府
+            @php
+             $judge = true;
+            @endphp
           @else
-          #福岡県
+            #福岡県
+            @php
+              $judge = true;
+            @endphp
           @endif
       </p>
       <p class="wrapper-box-content-text-categories">
@@ -64,6 +85,7 @@
         <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
       </form>
     </div>
+    
   </div>
   @endforeach
 </div>
