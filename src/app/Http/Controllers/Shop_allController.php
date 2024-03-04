@@ -12,9 +12,19 @@ class Shop_allController extends Controller
 {
     public function search(Request $request)
     {
-        $authors = Author::all();
+        $query = Author::query();
         $categories = Category::all();
-        
+
+        if ($request->filled('area')) {
+            $query->where('gender', $request->input('area'));
+        }
+
+        if ($request->filled('category_id')) {
+            $query->where('category_id', $request->input('category_id'));
+        }
+
+        $authors = $query->get();
+
         return view('shop_all', ['authors' => $authors, 'categories' => $categories]);
     }
 
