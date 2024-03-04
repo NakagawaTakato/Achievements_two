@@ -43,11 +43,11 @@
   @foreach ($authors as $author)
   @php
     if($first == true) {
-      $keep = $author->{'class-name'};
+      $keep = $author->{'class_name'};
       $first = false;
     }
     if($judge == true) {
-      $keep = $author->{'class-name'};
+      $keep = $author->{'class_name'};
     }
     $judge = false;
   @endphp
