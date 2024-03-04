@@ -10,6 +10,14 @@ use App\Models\Category;
 
 class Shop_allController extends Controller
 {
+    public function search(Request $request)
+    {
+        $authors = Author::all();
+        $categories = Category::all();
+        
+        return view('shop_all', ['authors' => $authors, 'categories' => $categories]);
+    }
+
     public function shop_all(Request $request)
     {
         $authors = Author::all();

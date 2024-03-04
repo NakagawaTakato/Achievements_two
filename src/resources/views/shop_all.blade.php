@@ -46,11 +46,11 @@
       </h2>
       <p class="wrapper-box-content-text">
           @if($author->gender == 1)
-          東京都
+          #東京都
           @elseif($author->gender == 2)
-          大阪府
+          #大阪府
           @else
-          福岡県
+          #福岡県
           @endif
       </p>
       <p class="wrapper-box-content-text-categories">
