@@ -54,10 +54,21 @@
     background-color: #FFFFFF;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -45px;
+}
 
-.wrapper {}
+.wrapper-box {
+    position: relative;
+    margin: 90px 10px 20px 0px;
+}
 
-.wrapper-box {}
+.wrapper-bottom {
+    margin-bottom: 370px;
+}
 
 .wrapper-box-img img {
     width: 100%;

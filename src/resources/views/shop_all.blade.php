@@ -64,9 +64,9 @@
         <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
       </form>
     </div>
-    
   </div>
   @endforeach
+  <div class="wrapper-bottom"></div>
 </div>
 @endsection
 
