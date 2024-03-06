@@ -44,28 +44,20 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
 
-        $date = $request->input('date');
-        $time = $request->input('time');
-        $number = $request->input('number');
-
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop'));
     }
 
     public function my_page(Request $request)
     {
+        // リクエストからデータを取得
         $name = $request->input('name');
         $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
 
-        $date = $request->input('date');
-        $time = $request->input('time');
-        $number = $request->input('number');
-
-
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop', 'date', 'time', 'number'));
+        return view('my_page', compact('name', 'image', 'city', 'shop'));
     }
 
     public function showShops()

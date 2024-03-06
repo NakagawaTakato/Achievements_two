@@ -57,10 +57,20 @@
         #{{$author->category->content}}
       </p>
       <form action="/shop_all/shop_detail" method="POST" >
+        @csrf
+        <input type="hidden" name="name" value="{{$author->name}}">
+        <input type="hidden" name="image" value="{{$author->image}}">
+        <input type="hidden" name="city" value="{{$author->city}}">
+        <input type="hidden" name="shop" value="{{$author->shop}}">
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
       <form action="/my_page" method="POST" >
+        @csrf
+        <input type="hidden" name="name" value="{{$author->name}}">
+        <input type="hidden" name="image" value="{{$author->image}}">
+        <input type="hidden" name="city" value="{{$author->city}}">
+        <input type="hidden" name="shop" value="{{$author->shop}}">
         <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
       </form>
     </div>

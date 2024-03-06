@@ -11,9 +11,12 @@
     <p class="container-text">Rese</p>
     
 
-    <h1>{{ $date }}</h1>
-    <p>{{ $time }}</p>
-    <p>{{ $number }}</p>
+    <div class="container-box-name">
+        <p>名前: {{ $name }}</p>
+        <p>画像: <img src="{{ $image }}" alt="image"></p>
+        <p>都市: {{ $city }}</p>
+        <p>店舗: {{ $shop }}</p>
+    </div>
 
 
 

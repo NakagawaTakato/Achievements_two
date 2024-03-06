@@ -17,7 +17,6 @@ class CreateAuthorsTable extends Migration
             $table->id();
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->tinyInteger('gender');
-            $table->string('class_name', 100);
             $table->string('name', 100);
             $table->string('image', 100);
             $table->string('city', 100);
