@@ -62,6 +62,7 @@
         <input type="hidden" name="image" value="{{$author->image}}">
         <input type="hidden" name="city" value="{{$author->city}}">
         <input type="hidden" name="shop" value="{{$author->shop}}">
+        <input type="hidden" name="group" value="{{$author->group}}">
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
