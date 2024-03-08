@@ -24,7 +24,7 @@
             <p>#{{ $city }} #{{ $shop }}</p>
 
             </br>
-            <p>{{$group}}</p>
+            <p>{!! nl2br(e($group)) !!}</p>
         </div>
     </div>
 
