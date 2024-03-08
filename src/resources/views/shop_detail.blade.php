@@ -12,9 +12,16 @@
         <p class="container-group-text">Rese</p>
 
         <div class="container-group-unit">
-            <div class="container-group-unit-return">
-                <a href="http://localhost/shop_all" ><i class="fa-solid fa-less-than"></i></a>
-            </div>
+            <form action="/my_page" method="POST" >
+                <div class="container-group-unit-return">
+                </div>
+                <input type="hidden" name="name" value="{{$author->name}}">
+                <input type="hidden" name="image" value="{{$author->image}}">
+                <input type="hidden" name="city" value="{{$author->city}}">
+                <input type="hidden" name="shop" value="{{$author->shop}}">
+                <input type="hidden" name="group" value="{{$author->group}}">
+                <button type="submit" class=""><i class="fa-solid fa-less-than"></i></button>
+            </form>
 
             <div class="container-group-unit-title">
                 <h1>{{ $name }}</h1>
