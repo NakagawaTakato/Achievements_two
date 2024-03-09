@@ -15,11 +15,11 @@
             <form action="/my_page" method="POST" >
                 <div class="container-group-unit-return">
                 </div>
-                <input type="hidden" name="name" value="{{$author->name}}">
-                <input type="hidden" name="image" value="{{$author->image}}">
-                <input type="hidden" name="city" value="{{$author->city}}">
-                <input type="hidden" name="shop" value="{{$author->shop}}">
-                <input type="hidden" name="group" value="{{$author->group}}">
+                <input type="hidden" name="name" value="{{ $name }}">
+                <input type="hidden" name="image" value="{{ $image }}">
+                <input type="hidden" name="city" value="{{ $city }}">
+                <input type="hidden" name="shop" value="{{ $shop }}">
+                <input type="hidden" name="group" value="{{ $group }}">
                 <button type="submit" class=""><i class="fa-solid fa-less-than"></i></button>
             </form>
 
