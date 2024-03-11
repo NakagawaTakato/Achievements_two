@@ -10,10 +10,8 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
     
+    
 
-    @foreach ($authors as $author)
-        <div>{{ $author->name }}</div>
-    @endforeach
 
 
 

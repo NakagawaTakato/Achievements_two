@@ -70,9 +70,12 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
 
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop', 'group', 'authors'));
+        return view('my_page', compact('name', 'image', 'city', 'shop', 'group', 'authors', 'date', 'time', 'number', 'authors'));
     }
 
     public function showShops()
