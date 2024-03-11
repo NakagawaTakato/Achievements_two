@@ -63,6 +63,7 @@ class Shop_allController extends Controller
 
     public function my_page(Request $request)
     {
+        $authors = Author::all();
         // リクエストからデータを取得
         $name = $request->input('name');
         $image = $request->input('image');
@@ -71,7 +72,7 @@ class Shop_allController extends Controller
         $group = $request->input('group');
 
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop', 'group'));
+        return view('my_page', compact('name', 'image', 'city', 'shop', 'group', 'authors'));
     }
 
     public function showShops()
