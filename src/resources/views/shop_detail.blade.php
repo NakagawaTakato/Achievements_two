@@ -31,7 +31,7 @@
     <div class="container-box">
         <h1 class="container-box-text">予約</h1>
         
-        <form action="/shop_all/shop_detail/shop_detail_two" method="post">
+        <form action="/my_page" method="post">
             @csrf
             <input type="date" name="date" required>
             <select class="container-group-bar-dropdown" name="time">
@@ -71,11 +71,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var closeButton = document.querySelector('.container-exit');
     var containerGroup = document.querySelector('.container-group');
 
+    var form = document.querySelector('form');
+    var selectedValueDiv = document.getElementById('selectedValue');
+
     closeButton.addEventListener('click', function(event) {
         event.preventDefault();
         containerGroup.style.display = 'none';
     });
 
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // フォームの送信を防ぎます
+
+        var date = form.querySelector('input[name="date"]').value;
+        var time = form.querySelector('select[name="time"]').value;
+        var number = form.querySelector('select[name="number"]').value;
+
+        selectedValueDiv.innerHTML = '日付: ' + date + '<br>時間: ' + time + '<br>人数: ' + number;
+    });
 });
 </script>
 @endsection
