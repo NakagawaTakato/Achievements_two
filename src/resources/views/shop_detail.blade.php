@@ -31,7 +31,7 @@
     <div class="container-box">
         <h1 class="container-box-text">予約</h1>
         
-        <form action="/my_page" method="post">
+        <form id="reservationForm" action="/my_page" method="post">
             @csrf
             <input type="date" name="date" required>
             <select class="container-group-bar-dropdown" name="time">
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var containerGroup = document.querySelector('.container-group');
 
     var form = document.querySelector('form');
-    var selectedValueDiv = document.getElementById('selectedValue');
+    var form = document.getElementById('reservationForm');
 
     closeButton.addEventListener('click', function(event) {
         event.preventDefault();
