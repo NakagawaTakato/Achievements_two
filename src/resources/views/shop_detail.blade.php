@@ -35,7 +35,7 @@
             @csrf
             <input type="date" name="date" required>
             <select class="container-group-bar-dropdown" name="time">
-                <option value="" disabled selected hidden>時間を選択</option>
+                <option value="time" disabled selected hidden>時間を選択</option>
                 @foreach($groups as $group)
                     <option value="{{ $group->time }}">{{ $group->time }}</option>
                 @endforeach
