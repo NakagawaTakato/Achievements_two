@@ -33,7 +33,7 @@ class GroupTableSeeder extends Seeder
             'number' => '4人'
         ];
         DB::table('groups')->insert($param);
-                $param = [
+        $param = [
             'time' => '21:00',
             'number' => '5人'
         ];

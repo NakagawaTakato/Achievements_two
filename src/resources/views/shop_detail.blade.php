@@ -34,6 +34,8 @@
         <form id="reservationForm" action="/my_page" method="post">
             @csrf
             <input type="date" name="date" required>
+            @foreach($groups as $group)
+            @endforeach
             <select class="container-group-bar-dropdown" name="time">
                 <option value="" disabled selected hidden>00:00</option>
                 <option value="17:00">17:00</option>

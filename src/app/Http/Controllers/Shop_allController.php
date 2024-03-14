@@ -70,9 +70,9 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
-        $date = $request->input('date'); // 日付を取得
-        $time = $request->input('time'); // 時間を取得
-        $number = $request->input('number'); // 人数を取得
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
 
         // ビューにデータを渡す
         return view('my_page', compact('name', 'image', 'city', 'shop', 'group', 'authors', 'date', 'time', 'number'));
