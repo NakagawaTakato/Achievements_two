@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Shop;
 use App\Models\Author;
 use App\Models\Category;
+use App\Models\Group;
 
 
 class Shop_allController extends Controller
