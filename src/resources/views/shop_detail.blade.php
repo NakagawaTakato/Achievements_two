@@ -34,9 +34,12 @@
         <form id="reservationForm" action="/my_page" method="post">
             @csrf
             <input type="date" name="date" required>
-            @foreach($groups as $group)
-                <option value="{{ $group->time }}">{{ $group->time }}</option>
-            @endforeach
+            <select class="container-group-bar-dropdown" name="time">
+                <option value="" disabled selected hidden>時間を選択</option>
+                @foreach($groups as $group)
+                    <option value="{{ $group->time }}">{{ $group->time }}</option>
+                @endforeach
+            </select>
             <!-- <select class="container-group-bar-dropdown" name="time">
                 <option value="" disabled selected hidden>00:00</option>
                 <option value="17:00">17:00</option>
@@ -48,14 +51,14 @@
                 <option value="23:00">23:00</option>
                 <option value="24:00">24:00</option>
             </select> -->
-            <select class="container-group-bar-dropdown" name="number">
+            <!-- <select class="container-group-bar-dropdown" name="number">
                 <option value="0人" disabled selected hidden>0人</option>
                 <option value="1人">1人</option>
                 <option value="2人">2人</option>
                 <option value="3人">3人</option>
                 <option value="4人">4人</option>
                 <option value="5人">5人</option>
-            </select>
+            </select> -->
 
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="image" value="{{$image}}">
