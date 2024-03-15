@@ -77,23 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var closeButton = document.querySelector('.container-exit');
     var containerGroup = document.querySelector('.container-group');
 
-    var form = document.querySelector('form');
-    var form = document.getElementById('reservationForm');
-
     closeButton.addEventListener('click', function(event) {
         event.preventDefault();
         containerGroup.style.display = 'none';
     });
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // フォームの送信を防ぎます
-
-        var date = form.querySelector('input[name="date"]').value;
-        var time = form.querySelector('select[name="time"]').value;
-        var number = form.querySelector('select[name="number"]').value;
-
-        selectedValueDiv.innerHTML = '日付: ' + date + '<br>時間: ' + time + '<br>人数: ' + number;
-    });
 });
 </script>
 @endsection

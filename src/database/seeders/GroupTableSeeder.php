@@ -26,7 +26,7 @@ class GroupTableSeeder extends Seeder
         ];
 
         foreach ($params as $param) {
-            DB::table('groups')->insert($param);
+            DB::table('groups')->insert(['param' => $param]);
         }
     }
 }
