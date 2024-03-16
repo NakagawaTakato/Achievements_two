@@ -15,9 +15,7 @@ class CreateGroupsTable extends Migration
     {
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
-            $table->date('reservation_date')->nullable();
-            $table->string('time', 8);
-            $table->string('number', 5);
+            $table->string('param');
             $table->timestamps();
         });
     }
