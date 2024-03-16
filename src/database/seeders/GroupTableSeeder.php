@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class GroupTableSeeder extends Seeder
 {
@@ -15,18 +16,19 @@ class GroupTableSeeder extends Seeder
     {
         // ここからグループデータの挿入
         $params = [
-            ['time' => '17:00', 'number' => '1人'],
-            ['time' => '18:00', 'number' => '2人'],
-            ['time' => '19:00', 'number' => '3人'],
-            ['time' => '20:00', 'number' => '4人'],
-            ['time' => '21:00', 'number' => '5人'],
-            ['time' => '22:00'],
-            ['time' => '23:00'],
-            ['time' => '24:00']
+            ["17:00", "1人"],
+            ["18:00", "2人"],
+            ["19:00", "3人"],
+            ["20:00", "4人"],
+            ["21:00", "5人"],
+            ["22:00"],
+            ["23:00"],
+            ["24:00"],
         ];
 
         foreach ($params as $param) {
-            DB::table('groups')->insert(['param' => $param]);
+            DB::table('groups')->insert(['param' => json_encode($param, JSON_UNESCAPED_UNICODE)]);
         }
+
     }
 }
