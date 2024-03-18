@@ -16,18 +16,18 @@ class GroupTableSeeder extends Seeder
     {
         // ここからグループデータの挿入
         $params = [
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00",
-            "24:00",
+            ["17:00", "1人"],
+            ["18:00", "2人"],
+            ["19:00", "3人"],
+            ["20:00", "4人"],
+            ["21:00", "5人"],
+            ["22:00"],
+            ["23:00"],
+            ["24:00"],
         ];
 
         foreach ($params as $param) {
-            DB::table('groups')->insert(['param' => ($param)]);
+            DB::table('groups')->insert(['param' => json_encode($param, JSON_UNESCAPED_UNICODE)]);
         }
 
     }
