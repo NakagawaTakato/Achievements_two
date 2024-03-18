@@ -20,7 +20,7 @@ class NumberTableSeeder extends Seeder
             "4人",
             "5人",
         ];
-
+//
         foreach ($values as $value) {
             DB::table('numbers')->insert(['value' => ($value)]);
         }
