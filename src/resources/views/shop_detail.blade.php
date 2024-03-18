@@ -37,7 +37,11 @@
             <select class="container-group-bar-dropdown" name="time">
                 <option value="time" disabled selected hidden>時間を選択</option>
                 @foreach($groups as $group)
-                    <option value="{{ $group->id }}" class="container-group-bar-dropdown-option">{{$group->param}}</option>
+                    <option value="{{ $group->id }}" >{{$group->param}}</option>
+                @endforeach
+                <option value="number" disabled selected hidden>人数</option>
+                @foreach($numbers as $number)
+                    <option value="{{ $number->id }}" >{{$number->value}}</option>
                 @endforeach
             </select>
             <!-- <select class="container-group-bar-dropdown" name="time">
