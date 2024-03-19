@@ -37,42 +37,22 @@
             <select class="container-box-time" name="time">
                 <option value="time" disabled selected hidden>時間を選択</option>
                 @foreach($groups as $group)
-                    <option value="{{ $group->id }}" >{{$group->param}}</option>
+                    <option value="{{ $group->id }}" class="container-box-time-parts">{{$group->param}}</option>
                 @endforeach
             </select>
             <select class="container-box-number" name="number">
                 <option value="number" disabled selected hidden>人数</option>
                 @foreach($numbers as $number)
-                    <option value="{{ $number->id }}" >{{$number->value}}</option>
+                    <option value="{{ $number->id }}" class="container-box-number-parts">{{$number->value}}</option>
                 @endforeach
             </select>
-
-            <!-- <select class="container-group-bar-dropdown" name="time">
-                <option value="" disabled selected hidden>00:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="22:00">22:00</option>
-                <option value="23:00">23:00</option>
-                <option value="24:00">24:00</option>
-            </select> -->
-            <!-- <select class="container-group-bar-dropdown" name="number">
-                <option value="0人" disabled selected hidden>0人</option>
-                <option value="1人">1人</option>
-                <option value="2人">2人</option>
-                <option value="3人">3人</option>
-                <option value="4人">4人</option>
-                <option value="5人">5人</option>
-            </select> -->
 
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="image" value="{{$image}}">
             <input type="hidden" name="city" value="{{$city}}">
             <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="group" value="{{$group}}">
-            <button type="submit">予約する</button>
+            <button class="container-box-button" type="submit">予約する</button>
 
         </form>
 
@@ -83,10 +63,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var closeButton = document.querySelector('.container-exit');
     var containerGroup = document.querySelector('.container-group');
 
+    var date = document.querySelector('.container-box-date');
+    var time = document.querySelector('.container-box-time-parts');
+    var number = document.querySelector('.container-box-number-parts');
+
+
     closeButton.addEventListener('click', function(event) {
         event.preventDefault();
         containerGroup.style.display = 'none';
     });
+
+    alert(date);
+    alert(time);
+    alert(number);
 
 });
 </script>
