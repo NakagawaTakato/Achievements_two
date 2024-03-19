@@ -7,6 +7,7 @@ use App\Models\Shop;
 use App\Models\Author;
 use App\Models\Category;
 use App\Models\Group;
+use App\Models\Number;
 
 
 class Shop_allController extends Controller
@@ -46,9 +47,10 @@ class Shop_allController extends Controller
         $shop = $request->input('shop');
         $group = $request->input('group');
         $groups = Group::all();
+        $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'groups'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'groups', 'numbers'));
     }
 
     public function shop_detail_two(Request $request)

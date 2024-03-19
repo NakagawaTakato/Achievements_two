@@ -31,19 +31,22 @@
     <div class="container-box">
         <h1 class="container-box-text">予約</h1>
         
-        <form id="reservationForm" action="/my_page" method="post">
+        <form action="/my_page" method="post">
             @csrf
-            <input type="date" name="date" required>
-            <select class="container-group-bar-dropdown" name="time">
+            <input type="date" name="date" class="container-box-date" required>
+            <select class="container-box-time" name="time">
                 <option value="time" disabled selected hidden>時間を選択</option>
                 @foreach($groups as $group)
                     <option value="{{ $group->id }}" >{{$group->param}}</option>
                 @endforeach
+            </select>
+            <select class="container-box-number" name="number">
                 <option value="number" disabled selected hidden>人数</option>
                 @foreach($numbers as $number)
                     <option value="{{ $number->id }}" >{{$number->value}}</option>
                 @endforeach
             </select>
+
             <!-- <select class="container-group-bar-dropdown" name="time">
                 <option value="" disabled selected hidden>00:00</option>
                 <option value="17:00">17:00</option>
@@ -71,7 +74,6 @@
             <input type="hidden" name="group" value="{{$group}}">
             <button type="submit">予約する</button>
 
-            <div id="selectedValue"></div>
         </form>
 
     </div>

@@ -53,6 +53,18 @@
     margin-left: 20px;
 }
 
+.container-box-date {
+    margin: 0px 0px 0px 15px;
+}
+
+.container-box-time {
+    margin: 0px 0px 30px 0px;
+}
+
+.container-box-number {
+    margin: 10px 0px 0px 0px;
+}
+
 .container-group-bar-dropdown-option {
     color: black;
 }

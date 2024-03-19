@@ -13,7 +13,7 @@ class CreateNumberTable extends Migration
      */
     public function up()
     {
-        Schema::create('number', function (Blueprint $table) {
+        Schema::create('numbers', function (Blueprint $table) {
             $table->id();
             $table->string('value');
             $table->timestamps();
