@@ -31,7 +31,7 @@
     <div class="container-box">
         <h1 class="container-box-text">予約</h1>
         
-        <form action="/shop_all/shop_detail/shop_detail_two" method="post">
+        <form action="/my_page" method="post">
             @csrf
             <input type="date" name="date" class="container-box-date" required>
             <select class="container-box-time" name="time">

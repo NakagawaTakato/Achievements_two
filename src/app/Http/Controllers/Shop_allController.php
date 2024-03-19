@@ -60,9 +60,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
+        $groups = Group::all();
+        $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'groups', 'numbers'));
     }
 
     public function my_page(Request $request)
