@@ -254,5 +254,6 @@ class AuthorsTableSeeder extends Seeder
                     "\nしております。"
     ];
     DB::table('authors')->insert($param);
+
     }
 }
