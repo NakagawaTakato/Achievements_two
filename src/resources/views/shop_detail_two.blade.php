@@ -36,8 +36,8 @@
             <input type="date" name="date" class="container-box-date" required>
             <select class="container-box-time" name="time">
                 <option value="time" disabled selected hidden>時間を選択</option>
-                @foreach($groups as $group)
-                    <option value="{{ $group->id }}" >{{$group->param}}</option>
+                @foreach($wrappers as $wrapper)
+                    <option value="{{ $wrapper->id }}" >{{$wrapper->param}}</option>
                 @endforeach
             </select>
             <select class="container-box-number" name="number">

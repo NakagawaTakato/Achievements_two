@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategoriesTableSeeder::class,
             AuthorsTableSeeder::class,
-            GroupTableSeeder::class,
+            WrapperTableSeeder::class,
             NumberTableSeeder::class
         ]);
     }

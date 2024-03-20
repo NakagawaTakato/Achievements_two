@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class GroupTableSeeder extends Seeder
+class WrapperTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -26,7 +26,7 @@ class GroupTableSeeder extends Seeder
         ];
 
         foreach ($params as $param) {
-            DB::table('groups')->insert(['param' => ($param)]);
+            DB::table('wrappers')->insert(['param' => ($param)]);
         }
     }
 }

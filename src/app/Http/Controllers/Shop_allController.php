@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Shop;
 use App\Models\Author;
 use App\Models\Category;
-use App\Models\Group;
+use App\Models\Wrapper;
 use App\Models\Number;
 
 
@@ -46,11 +46,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
-        $groups = Group::all();
+        $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'groups', 'numbers'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
     }
 
     public function shop_detail_two(Request $request)
@@ -60,11 +60,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
-        $groups = Group::all();
+        $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'groups', 'numbers'));
+        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
     }
 
     public function my_page(Request $request)
