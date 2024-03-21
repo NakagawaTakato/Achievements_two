@@ -47,6 +47,10 @@
                 @endforeach
             </select>
 
+            <p>日付: {{ $date }}</p>
+            <p>時間: {{ $time }}</p>
+            <p>人数: {{ $number }}</p>
+
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="image" value="{{$image}}">
             <input type="hidden" name="city" value="{{$city}}">
