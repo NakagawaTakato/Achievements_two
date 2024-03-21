@@ -47,12 +47,19 @@
                 @endforeach
             </select>
 
+            <p>{{ $date }}</p>
+            <p>{{ $time }}</p>
+            <p>{{ $number }}</p>
+
 
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="image" value="{{$image}}">
             <input type="hidden" name="city" value="{{$city}}">
             <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="group" value="{{$group}}">
+            <input type="hidden" name="date" value="{{ $date }}">
+            <input type="hidden" name="time" value="{{ $time }}">
+            <input type="hidden" name="number" value="{{ $number }}">
             <button class="container-box-button" type="submit">予約する</button>
 
         </form>

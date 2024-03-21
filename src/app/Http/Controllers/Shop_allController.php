@@ -46,11 +46,14 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
     }
 
     public function shop_detail_two(Request $request)
@@ -60,11 +63,14 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $number = $request->input('number');
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
     }
 
     public function my_page(Request $request)
