@@ -46,14 +46,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
-        $date = $request->input('date');
-        $timeParam = Wrapper::where('id', $request->input('time'))->first()->param ?? '選択されていません';
-        $numberValue = Number::where('id', $request->input('number'))->first()->value ?? '選択されていません';
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'timeParam', 'numberValue', 'wrappers', 'numbers'));
+        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
     }
 
     public function shop_detail_two(Request $request)
@@ -63,14 +60,11 @@ class Shop_allController extends Controller
         $city = $request->input('city');
         $shop = $request->input('shop');
         $group = $request->input('group');
-        $date = $request->input('date');
-        $timeParam = Wrapper::where('id', $request->input('time'))->first()->param ?? '選択されていません';
-        $numberValue = Number::where('id', $request->input('number'))->first()->value ?? '選択されていません';
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'timeParam', 'numberValue', 'wrappers', 'numbers'));
+        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'wrappers', 'numbers'));
     }
 
     public function my_page(Request $request)
