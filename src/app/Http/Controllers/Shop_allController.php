@@ -70,7 +70,7 @@ class Shop_allController extends Controller
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
+        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
     }
 
     public function my_page(Request $request)
