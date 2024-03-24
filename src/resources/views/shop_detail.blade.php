@@ -33,17 +33,17 @@
         
         <form action="/shop_all/shop_detail/shop_detail_two" method="post">
             @csrf
-            <input type="date" name="date" class="container-box-date" required>
+            <input type="date" name="date" class="container-box-date" required value="{{ old('date') }}">
             <select class="container-box-time" name="time">
                 <option value="time" disabled selected hidden>時間を選択</option>
                 @foreach($wrappers as $wrapper)
-                    <option value="{{ $wrapper->id }}" >{{$wrapper->param}}</option>
+                    <option value="{{ $wrapper->id }}" {{ old('time') == $wrapper->id ? 'selected' : '' }}>{{$wrapper->param}}</option>
                 @endforeach
             </select>
             <select class="container-box-number" name="number">
                 <option value="number" disabled selected hidden>人数</option>
                 @foreach($numbers as $number)
-                    <option value="{{ $number->id }}" >{{$number->value}}</option>
+                    <option value="{{ $number->id }}" {{ old('number') == $number->id ? 'selected' : '' }}>{{$number->value}}</option>
                 @endforeach
             </select>
 
@@ -52,11 +52,8 @@
             <input type="hidden" name="city" value="{{$city}}">
             <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="group" value="{{$group}}">
-            <input type="hidden" name="date" value="{{ $date }}">
-            <input type="hidden" name="time" value="{{ $time }}">
-            <input type="hidden" name="number" value="{{ $number }}">
-            <button class="container-box-button" type="submit">予約する</button>
 
+            <button class="container-box-button" type="submit">予約する</button>
         </form>
         
 

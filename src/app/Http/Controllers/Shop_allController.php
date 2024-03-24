@@ -64,8 +64,10 @@ class Shop_allController extends Controller
         $shop = $request->input('shop');
         $group = $request->input('group');
         $date = $request->input('date');
-        $time = $request->input('time');
-        $number = $request->input('number');
+        $timeId = $request->input('time');
+        $numberId = $request->input('number');
+        $time = Wrapper::find($timeId);
+        $number = Number::find($numberId);
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 

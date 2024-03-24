@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/shop_detail.css') }}">
+<link rel="stylesheet" href="{{ asset('css/shop_detail_two.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 @endsection
 
@@ -47,9 +47,10 @@
                 @endforeach
             </select>
 
-            <p>{{ $date }}</p>
-            <p>{{ $time }}</p>
-            <p>{{ $number }}</p>
+            <p class="container-box-name_display">Shop          {{ $name }}</p>
+            <p class="container-box-date_display">Date          {{ $date }}</p>
+            <p class="container-box-time_display">time          {{ $time->param }}</p>
+            <p class="container-box-number_display">Number          {{ $number->value }}</p>
 
 
             <input type="hidden" name="name" value="{{$name}}">
@@ -57,9 +58,6 @@
             <input type="hidden" name="city" value="{{$city}}">
             <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="group" value="{{$group}}">
-            <!-- <input type="hidden" name="date" value="{{ $date }}">
-            <input type="hidden" name="time" value="{{ $time }}">
-            <input type="hidden" name="number" value="{{ $number }}"> -->
             <button class="container-box-button" type="submit">予約する</button>
 
         </form>
