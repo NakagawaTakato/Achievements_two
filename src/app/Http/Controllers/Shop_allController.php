@@ -67,12 +67,12 @@ class Shop_allController extends Controller
         $timeId = $request->input('time');
         $numberId = $request->input('number');
         $time = Wrapper::find($timeId);
-        $number = Number::find($numberId);
+        $fake = Number::find($numberId);
         $wrappers = Wrapper::all();
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
+        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'fake', 'wrappers', 'numbers'));
     }
 
     public function my_page(Request $request)

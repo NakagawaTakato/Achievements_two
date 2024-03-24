@@ -43,7 +43,7 @@
             <select class="container-box-number" name="number">
                 <option value="number" disabled selected hidden>人数</option>
                 @foreach($numbers as $number)
-                    <option value="{{ $number->id }}" {{ old('number') == $number->id ? 'selected' : '' }}>{{$number->value}}</option>
+                    <option value="{{ $number->id }}" {{ old('fake') == $number->id ? 'selected' : '' }}>{{$number->value}}</option>
                 @endforeach
             </select>
 
