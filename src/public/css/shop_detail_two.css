@@ -87,18 +87,21 @@
 }
 
 .container-box-name_display {
-    margin: 180px 0px 0px 0px;
+    margin: 180px 0px 0px 20px;
     color: white;
 }
 
 .container-box-date_display {
+    margin-left: 20px;
     color: white;
 }
 
 .container-box-time_display {
+    margin-left: 20px;
     color: white;
 }
 
 .container-box-number_display {
+    margin-left: 20px;
     color: white;
 }

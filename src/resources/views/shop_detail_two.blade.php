@@ -47,10 +47,10 @@
                 @endforeach
             </select>
 
-            <p class="container-box-name_display">Shop          {{ $name }}</p>
-            <p class="container-box-date_display">Date          {{ $date }}</p>
-            <p class="container-box-time_display">time          {{ $time->param }}</p>
-            <p class="container-box-number_display">Number          {{ $number->value }}</p>
+            <p class="container-box-name_display">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
+            <p class="container-box-date_display">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
+            <p class="container-box-time_display">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param }}</p>
+            <p class="container-box-number_display">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $number->value }}</p>
 
 
             <input type="hidden" name="name" value="{{$name}}">

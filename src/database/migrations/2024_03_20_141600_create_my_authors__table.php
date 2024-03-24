@@ -13,7 +13,7 @@ class CreateMyAuthorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('my_authors_', function (Blueprint $table) {
+        Schema::create('my_authors', function (Blueprint $table) {
             $table->id();
             $table->date('date')->nullable();
             $table->timestamps();
