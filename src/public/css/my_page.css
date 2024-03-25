@@ -24,4 +24,20 @@
 
 .container-box {
     background-color: #305DFF;
+    width: 50%;
+    height: 50%;
+    border-radius: 3px;
+}
+
+.container-box-sub,
+.container-box-shop,
+.container-box-date,
+.container-box-time,
+.container-box-number {
+    color: white;
+}
+
+.container-box-delete {
+    color: white;
+    margin: 0px 0px 0px 100px;
 }

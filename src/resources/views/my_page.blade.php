@@ -11,18 +11,18 @@
     <p class="container-text">Rese</p>
     
 
-    <<div class="container-box">
+    <h1>予約状況</h1>
+    <div class="container-box">
         <form action="/shop_all" method="post">
             @csrf
-            <h1>予約状況</h1>
-            <p>予約1</p>
-            <p class="container-box-group-name_display">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
-            <p class="container-box-group-date_display">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
-            <p class="container-box-group-time_display">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
-            <p class="container-box--group-number_display">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
+            <p class="container-box-sub">予約1</p>
+            <p class="container-box-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
+            <p class="container-box-date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
+            <p class="container-box-time">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
+            <p class="container-box-number">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
 
             @method('DELETE')
-            <button type="submit">Delete</button>
+            <button type="submit" class="container-box-delete"><i class="fa-solid fa-xmark"></i></button>
         </form>
     </div>
 
@@ -41,11 +41,5 @@
 
 
     
-    <div class="container-box">
-        <div class="container-box-name">
-            
-        </div>
-
-    </div>
 </div>
 @endsection
