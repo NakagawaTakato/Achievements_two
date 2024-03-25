@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: #EEEEEE;
+    height: 750px;
 }
 
 .container-group {
@@ -81,9 +82,11 @@
 
 .container-box-button {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    bottom: 3px;
     color: white;
+    border: none;
     background-color: #0538FF;
     border-radius: 3px;
 }

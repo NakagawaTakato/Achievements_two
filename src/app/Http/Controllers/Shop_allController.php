@@ -81,13 +81,14 @@ class Shop_allController extends Controller
         $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
-        $group = $request->input('group');
         $date = $request->input('date');
-        $time = $request->input('time');
-        $number = $request->input('number');
+        $timeId = $request->input('time');
+        $numberId = $request->input('number');
+        $time = Wrapper::find($timeId);
+        $fake = Number::find($numberId);
 
         // ビューにデータを渡す
-        return view('my_page', compact('name', 'image', 'city', 'shop', 'group', 'authors', 'date', 'time', 'number'));
+        return view('my_page', compact('authors', 'name', 'image', 'city', 'shop', 'date', 'time', 'fake'));
     }
 
     public function showShops()
