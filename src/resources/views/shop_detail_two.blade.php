@@ -33,20 +33,6 @@
         
         <form action="/my_page" method="post">
             @csrf
-            <input type="date" name="date" class="container-box-date" required>
-            <select class="container-box-time" name="time">
-                <option value="time" disabled selected hidden>時間を選択</option>
-                @foreach($wrappers as $wrapper)
-                    <option value="{{ $wrapper->id }}" >{{$wrapper->param}}</option>
-                @endforeach
-            </select>
-            <select class="container-box-number" name="number">
-                <option value="number" disabled selected hidden>人数</option>
-                @foreach($numbers as $number)
-                    <option value="{{ $number->id }}" >{{$number->value}}</option>
-                @endforeach
-            </select>
-
             <div class="container-box-group">
                 <p class="container-box-group-name_display">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
                 <p class="container-box-group-date_display">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>

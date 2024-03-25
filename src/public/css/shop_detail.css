@@ -56,30 +56,36 @@
 }
 
 .container-box-date {
+    width: 30%;
     position: absolute;
     bottom: 400px;
     left: 20px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
 }
 
 .container-box-time {
+    width: 80%;
     position: absolute;
     bottom: 370px;
     left: 20px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
 }
 
 .container-box-number {
+    width: 80%;
     position: absolute;
     bottom: 340px;
     left: 20px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
 }
 
 .container-box-button {
     position: absolute;
     bottom: 10px;
     left: 20px;
+    color: white;
+    background-color: #0538FF;
+    border-radius: 3px;
 }
 
 .container-group-bar-dropdown-option {
