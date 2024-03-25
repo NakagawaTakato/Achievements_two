@@ -43,8 +43,8 @@
 
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="image" value="{{$date}}">
-            <input type="hidden" name="city" value="{{$time->param}}">
-            <input type="hidden" name="shop" value="{{$fake->value}}">
+            <input type="hidden" name="time" value="{{ $time->id }}">
+            <input type="hidden" name="number" value="{{ $fake->id }}">
             <button class="container-box-button" type="submit">予約する</button>
 
         </form>
