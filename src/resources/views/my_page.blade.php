@@ -11,18 +11,20 @@
     <p class="container-text">Rese</p>
     
 
-    <form action="/shop_all" method="post">
-        @csrf
-        <h1>予約状況</h1>
-        <p>予約1</p>
-        <p class="container-box-group-name_display">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
-        <p class="container-box-group-date_display">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
-        <p class="container-box-group-time_display">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
-        <p class="container-box--group-number_display">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
+    <<div class="container-box">
+        <form action="/shop_all" method="post">
+            @csrf
+            <h1>予約状況</h1>
+            <p>予約1</p>
+            <p class="container-box-group-name_display">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
+            <p class="container-box-group-date_display">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
+            <p class="container-box-group-time_display">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
+            <p class="container-box--group-number_display">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
 
-        @method('DELETE')
-        <button type="submit">Delete</button>
-    </form>
+            @method('DELETE')
+            <button type="submit">Delete</button>
+        </form>
+    </div>
 
 
 
