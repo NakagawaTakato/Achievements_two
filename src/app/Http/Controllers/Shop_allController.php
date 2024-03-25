@@ -42,9 +42,9 @@ class Shop_allController extends Controller
     public function shop_detail(Request $request)
     {
         $name = $request->input('name');
-        $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
+        $image = $request->input('image');
         $group = $request->input('group');
         $date = $request->input('date');
         $time = $request->input('time');
@@ -53,15 +53,15 @@ class Shop_allController extends Controller
         $numbers = Number::all();
 
         // ビューにデータを渡す
-        return view('shop_detail', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
+        return view('shop_detail', compact('name', 'city', 'shop', 'image', 'group', 'date', 'time', 'number', 'wrappers', 'numbers'));
     }
 
     public function shop_detail_two(Request $request)
     {
         $name = $request->input('name');
-        $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
+        $image = $request->input('image');
         $group = $request->input('group');
         $date = $request->input('date');
         $timeId = $request->input('time');
@@ -70,7 +70,7 @@ class Shop_allController extends Controller
         $fake = Number::find($numberId);
 
         // ビューにデータを渡す
-        return view('shop_detail_two', compact('name', 'image', 'city', 'shop', 'group', 'date', 'time', 'fake', ));
+        return view('shop_detail_two', compact('name', 'city', 'shop', 'image', 'group', 'date', 'time', 'fake', ));
     }
 
     public function my_page(Request $request)
@@ -78,9 +78,9 @@ class Shop_allController extends Controller
         $authors = Author::all();
         // リクエストからデータを取得
         $name = $request->input('name');
-        $image = $request->input('image');
         $city = $request->input('city');
         $shop = $request->input('shop');
+        $image = $request->input('image');
         $date = $request->input('date');
         $timeId = $request->input('time');
         $numberId = $request->input('number');
@@ -88,7 +88,7 @@ class Shop_allController extends Controller
         $fake = Number::find($numberId);
 
         // ビューにデータを渡す
-        return view('my_page', compact('authors', 'name', 'image', 'city', 'shop', 'date', 'time', 'fake'));
+        return view('my_page', compact('authors', 'name', 'city', 'shop', 'image', 'date', 'time', 'fake'));
     }
 
     public function showShops()
