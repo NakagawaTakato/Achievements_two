@@ -23,10 +23,41 @@
 }
 
 .container-box {
+    position: relative;
     background-color: #305DFF;
-    width: 50%;
-    height: 50%;
+    width: 370px;
+    height: 280px;
     border-radius: 3px;
+}
+
+.container-box-sub {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.container-box-shop {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.container-box-date {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.container-box-time {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.container-box-number {
+    position: absolute;
+    top: 120px;
+    left: 20px;
 }
 
 .container-box-sub,
@@ -38,6 +69,11 @@
 }
 
 .container-box-delete {
-    color: white;
-    margin: 0px 0px 0px 100px;
+    position: absolute;
+    top: 30px;
+    left: 330px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    color: #FFFFFF;
 }

@@ -56,7 +56,6 @@
 
             <button class="container-box-button" type="submit">予約する</button>
         </form>
-        
 
     </div>
 </div>
