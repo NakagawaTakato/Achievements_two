@@ -26,37 +26,44 @@
     position: relative;
     background-color: #305DFF;
     width: 370px;
-    height: 280px;
+    height: 230px;
     border-radius: 3px;
+}
+
+.fa-solid.fa-check {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #FFFFFF;
 }
 
 .container-box-sub {
     position: absolute;
     top: 10px;
-    left: 50px;
+    left: 90px;
 }
 
 .container-box-shop {
-    position: absolute;
-    top: 40px;
-    left: 20px;
-}
-
-.container-box-date {
     position: absolute;
     top: 60px;
     left: 20px;
 }
 
-.container-box-time {
+.container-box-date {
     position: absolute;
     top: 90px;
     left: 20px;
 }
 
-.container-box-number {
+.container-box-time {
     position: absolute;
     top: 120px;
+    left: 20px;
+}
+
+.container-box-number {
+    position: absolute;
+    top: 150px;
     left: 20px;
 }
 
@@ -70,8 +77,8 @@
 
 .container-box-delete {
     position: absolute;
-    top: 30px;
-    left: 330px;
+    top: 25px;
+    left: 310px;
     background-color: transparent;
     border-color: #FFFFFF;
     border-radius: 50%;

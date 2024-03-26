@@ -49,7 +49,7 @@
 
             <input type="hidden" name="name" value="{{$name}}">
             <input type="hidden" name="city" value="{{$city}}">
-            <input type="hidden" name="name" value="{{$shop}}">
+            <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="image" value="{{$image}}">
             <input type="hidden" name="shop" value="{{$shop}}">
             <input type="hidden" name="group" value="{{$group}}">

@@ -15,6 +15,7 @@
     <div class="container-box">
         <form action="/shop_all" method="post">
             @csrf
+            <i class="fa-solid fa-check"></i>
             <p class="container-box-sub">予約1</p>
             <p class="container-box-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
             <p class="container-box-date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
