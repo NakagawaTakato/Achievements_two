@@ -24,6 +24,11 @@
 
 .container-box {
     position: relative;
+    top: 30px;
+}
+
+.container-box-about {
+    position: relative;
     background-color: #305DFF;
     width: 370px;
     height: 230px;
@@ -32,36 +37,40 @@
 
 .fa-solid.fa-check {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    color: #FFFFFF;
+    top: 25px;
+    left: 20px;
+    color: #00FF00;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 2px;
 }
 
-.container-box-sub {
+.container-box-about-sub {
     position: absolute;
     top: 10px;
     left: 90px;
 }
 
-.container-box-shop {
+.container-box-about-shop {
     position: absolute;
     top: 60px;
     left: 20px;
 }
 
-.container-box-date {
+.container-box-about-date {
     position: absolute;
     top: 90px;
     left: 20px;
 }
 
-.container-box-time {
+.container-box-about-time {
     position: absolute;
     top: 120px;
     left: 20px;
 }
 
-.container-box-number {
+.container-box-about-number {
     position: absolute;
     top: 150px;
     left: 20px;

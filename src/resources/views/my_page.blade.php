@@ -10,21 +10,22 @@
     <a href="#" class="container-exit"><i class="fa-solid fa-bars"></i></a>
     <p class="container-text">Rese</p>
     
-
-    <h1>予約状況</h1>
     <div class="container-box">
-        <form action="/shop_all" method="post">
-            @csrf
-            <i class="fa-solid fa-check"></i>
-            <p class="container-box-sub">予約1</p>
-            <p class="container-box-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
-            <p class="container-box-date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
-            <p class="container-box-time">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
-            <p class="container-box-number">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
+        <h2>予約状況</h2>
+        <div class="container-box-about">
+            <form action="/shop_all" method="post">
+                @csrf
+                <i class="fa-solid fa-check"></i>
+                <p class="container-box-about-sub">予約1</p>
+                <p class="container-box-about-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name }}</p>
+                <p class="container-box-about-date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
+                <p class="container-box-about-time">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
+                <p class="container-box-about-number">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
 
-            @method('DELETE')
-            <button type="submit" class="container-box-delete"><i class="fa-solid fa-xmark"></i></button>
-        </form>
+                @method('DELETE')
+                <button type="submit" class="container-box-delete"><i class="fa-solid fa-xmark"></i></button>
+            </form>
+        </div>
     </div>
 
 
