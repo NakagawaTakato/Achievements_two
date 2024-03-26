@@ -68,10 +68,10 @@
 
       <form action="/my_page" method="POST" >
         @csrf
-        <input type="hidden" name="name" value="{{$author->name}}">
-        <input type="hidden" name="image" value="{{$author->image}}">
-        <input type="hidden" name="city" value="{{$author->city}}">
-        <input type="hidden" name="shop" value="{{$author->shop}}">
+        <input type="hidden" name="name[{{$author->id}}]" value="{{$author->name}}">
+        <input type="hidden" name="image[{{$author->id}}]" value="{{$author->image}}">
+        <input type="hidden" name="city[{{$author->id}}]" value="{{$author->city}}">
+        <input type="hidden" name="shop[{{$author->id}}]" value="{{$author->shop}}">
         <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
       </form>
     </div>
