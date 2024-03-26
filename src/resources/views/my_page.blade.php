@@ -29,23 +29,16 @@
     </div>
 
 
+
+
     <div class="container-group-unit-title">
-        @foreach($names as $name)
-            <h1>{{ $name }}</h1>
-        @endforeach
+        <h1>{{ $name }}</h1>
     </div>
 
-    @foreach($images as $image)
-        <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
-    @endforeach
+    <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
+    <p>#{{ $city }} #{{ $shop }}</p>
 
-    @foreach($cities as $city)
-        <p>#{{ $city }}</p>
-    @endforeach
 
-    @foreach($shops as $shop)
-        <p>#{{ $shop }}</p>
-    @endforeach
 
 
 
