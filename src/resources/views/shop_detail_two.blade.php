@@ -41,10 +41,10 @@
             </div>
 
 
-            <input type="hidden" name="name" value="{{$name}}">
-            <input type="hidden" name="city" value="{{$city}}">
-            <input type="hidden" name="shop" value="{{$shop}}">
-            <input type="hidden" name="image" value="{{$image}}">
+            <input type="hidden" name="names[]" value="{{$name}}">
+            <input type="hidden" name="images[]" value="{{$image}}">
+            <input type="hidden" name="cities[]" value="{{$city}}">
+            <input type="hidden" name="shops[]" value="{{$shop}}">
             <input type="hidden" name="date" value="{{$date}}">
             <input type="hidden" name="time" value="{{ $time->id }}">
             <input type="hidden" name="number" value="{{ $fake->id }}">

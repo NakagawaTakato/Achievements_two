@@ -47,11 +47,10 @@
                 @endforeach
             </select>
 
-            <input type="hidden" name="name" value="{{$name}}">
-            <input type="hidden" name="city" value="{{$city}}">
-            <input type="hidden" name="shop" value="{{$shop}}">
-            <input type="hidden" name="image" value="{{$image}}">
-            <input type="hidden" name="shop" value="{{$shop}}">
+            <input type="hidden" name="names[]" value="{{$author->name}}">
+            <input type="hidden" name="images[]" value="{{$author->image}}">
+            <input type="hidden" name="cities[]" value="{{$author->city}}">
+            <input type="hidden" name="shops[]" value="{{$author->shop}}">
             <input type="hidden" name="group" value="{{$group}}">
 
             <button class="container-box-button" type="submit">予約する</button>
