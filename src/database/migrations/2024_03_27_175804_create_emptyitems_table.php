@@ -15,10 +15,10 @@ class CreateEmptyitemsTable extends Migration
     {
         Schema::create('emptyitems', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
-            $table->string('image', 100);
-            $table->string('city', 100);
-            $table->string('shop', 100);
+            $table->string('name')->nullable();
+            $table->string('image')->nullable();
+            $table->string('city')->nullable();
+            $table->string('shop')->nullable();
             $table->timestamps();
         });
     }
