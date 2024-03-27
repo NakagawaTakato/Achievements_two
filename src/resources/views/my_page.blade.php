@@ -17,7 +17,7 @@
                 @csrf
                 <i class="fa-solid fa-check"></i>
                 <p class="container-box-about-sub">予約1</p>
-                <p class="container-box-about-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name[0] ?? 'デフォルト値' }}</p>
+                <p class="container-box-about-shop">Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $name ?? 'デフォルト値' }}</p>
                 <p class="container-box-about-date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $date }}</p>
                 <p class="container-box-about-time">time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $time->param ?? 'デフォルト値' }}</p>
                 <p class="container-box-about-number">Number&nbsp;&nbsp;&nbsp;&nbsp;{{ $fake->value ?? 'デフォルト値' }}</p>
@@ -30,14 +30,12 @@
 
 
 
-    @foreach($names as $id => $name)
-        <div class="container-group-unit-title">
-            <h1>{{ $name }}</h1>
-        </div>
+    <div class="container-group-unit-title">
+        <h1>{{ $name }}</h1>
+    </div>
 
-        <img src="{{ asset($images[$id]) }}" alt="" class="container-group-unit-image" />
-        <p>#{{ $cities[$id] }} #{{ $shops[$id] }}</p>
-    @endforeach
+    <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
+    <p>#{{ $city }} #{{ $shop }}</p>
 
 
 

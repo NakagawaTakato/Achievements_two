@@ -77,10 +77,10 @@ class Shop_allController extends Controller
     {
         $authors = Author::all();
         // 配列としてデータを取得
-        $names = $request->input('name');
-        $cities = $request->input('city');
-        $shops = $request->input('shop');
-        $images = $request->input('image');
+        $name = $request->input('name');
+        $city = $request->input('city');
+        $shop = $request->input('shop');
+        $image = $request->input('image');
         $date = $request->input('date');
         $timeId = $request->input('time');
         $numberId = $request->input('number');
@@ -88,7 +88,7 @@ class Shop_allController extends Controller
         $fake = Number::find($numberId);
 
         // 配列のデータをビューに渡す
-        return view('my_page', compact('authors', 'names', 'cities', 'shops', 'images', 'date', 'time', 'fake'));
+        return view('my_page', compact('authors', 'name', 'city', 'shop', 'image', 'date', 'time', 'fake'));
     }
 
     public function showShops()
