@@ -20,28 +20,28 @@ class EmptyTableSeeder extends Seeder
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
 
     $part = [
         'name' => null,
@@ -49,28 +49,28 @@ class EmptyTableSeeder extends Seeder
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
 
     $part = [
         'name' => null,
@@ -78,28 +78,28 @@ class EmptyTableSeeder extends Seeder
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
 
     $part = [
         'name' => null,
@@ -107,28 +107,28 @@ class EmptyTableSeeder extends Seeder
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
 
     $part = [
         'name' => null,
@@ -136,27 +136,27 @@ class EmptyTableSeeder extends Seeder
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     $part = [
         'name' => null,
         'image' => null,
         'city' => null,
         'shop' => null
     ];
-    DB::table('emptys')->insert($part);
+    DB::table('emptyitems')->insert($part);
     }
 }
