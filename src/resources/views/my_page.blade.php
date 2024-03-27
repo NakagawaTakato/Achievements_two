@@ -30,13 +30,13 @@
 
 
 
-    @foreach($name as $id => $value)
+    @foreach($names as $id => $name)
         <div class="container-group-unit-title">
-            <h1>{{ $name[$id] }}</h1>
+            <h1>{{ $name }}</h1>
         </div>
 
-        <img src="{{ asset($image[$id]) }}" alt="" class="container-group-unit-image" />
-        <p>#{{ $city[$id] }} #{{ $shop[$id] }}</p>
+        <img src="{{ asset($images[$id]) }}" alt="" class="container-group-unit-image" />
+        <p>#{{ $cities[$id] }} #{{ $shops[$id] }}</p>
     @endforeach
 
 

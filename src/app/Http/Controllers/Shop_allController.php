@@ -76,19 +76,19 @@ class Shop_allController extends Controller
     public function my_page(Request $request)
     {
         $authors = Author::all();
-        // リクエストからデータを取得
-        $name = $request->input('name');
-        $city = $request->input('city');
-        $shop = $request->input('shop');
-        $image = $request->input('image');
+        // 配列としてデータを取得
+        $names = $request->input('name');
+        $cities = $request->input('city');
+        $shops = $request->input('shop');
+        $images = $request->input('image');
         $date = $request->input('date');
         $timeId = $request->input('time');
         $numberId = $request->input('number');
         $time = Wrapper::find($timeId);
         $fake = Number::find($numberId);
 
-        // ビューにデータを渡す
-        return view('my_page', compact('authors', 'name', 'city', 'shop', 'image', 'date', 'time', 'fake'));
+        // 配列のデータをビューに渡す
+        return view('my_page', compact('authors', 'names', 'cities', 'shops', 'images', 'date', 'time', 'fake'));
     }
 
     public function showShops()
