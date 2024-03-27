@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
             AuthorsTableSeeder::class,
             WrapperTableSeeder::class,
             NumberTableSeeder::class,
-            My_AuthorsTableSeeder::class
+            My_AuthorsTableSeeder::class,
+            EmptyTableSeeder::class
         ]);
     }
 }
