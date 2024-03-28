@@ -8,7 +8,8 @@ use App\Models\Author;
 use App\Models\Category;
 use App\Models\Wrapper;
 use App\Models\Number;
-use App\Models\EmptyItem;
+use App\Models\Emptyitem;
+use Illuminate\Support\Facades\DB;
 
 
 class Shop_allController extends Controller

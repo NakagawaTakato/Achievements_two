@@ -68,7 +68,7 @@
 
     <form action="/my_page" method="POST" >
         @csrf
-        @foreach ($emptyItems as $item)
+        @foreach ($emptyitems as $item)
             <input type="hidden" name="name[{{$item->id}}]" value="{{$item->name}}">
             <input type="hidden" name="image[{{$item->id}}]" value="{{$item->image}}">
             <input type="hidden" name="city[{{$item->id}}]" value="{{$item->city}}">
