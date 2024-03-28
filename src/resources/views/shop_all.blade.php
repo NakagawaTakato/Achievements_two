@@ -66,14 +66,16 @@
         <button type="submit" class="wrapper-box-content-cat">詳しくみる</button>
       </form>
 
-      <form action="/my_page" method="POST" >
+    <form action="/my_page" method="POST" >
         @csrf
-        <input type="hidden" name="name" value="{{$author->name}}">
-        <input type="hidden" name="image" value="{{$author->image}}">
-        <input type="hidden" name="city" value="{{$author->city}}">
-        <input type="hidden" name="shop" value="{{$author->shop}}">
+        @foreach ($emptyItems as $item)
+            <input type="hidden" name="name[{{$item->id}}]" value="{{$item->name}}">
+            <input type="hidden" name="image[{{$item->id}}]" value="{{$item->image}}">
+            <input type="hidden" name="city[{{$item->id}}]" value="{{$item->city}}">
+            <input type="hidden" name="shop[{{$item->id}}]" value="{{$item->shop}}">
+        @endforeach
         <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
-      </form>
+    </form>
     </div>
   </div>
   @endforeach

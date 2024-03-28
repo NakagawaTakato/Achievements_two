@@ -30,12 +30,13 @@
 
 
 
-    <div class="container-group-unit-title">
-        <h1>{{ $name }}</h1>
-    </div>
-
-    <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
-    <p>#{{ $city }} #{{ $shop }}</p>
+    @foreach ($emptyItems as $item)
+        <div class="container-group-unit">
+            <h1>{{ $item->name }}</h1>
+            <img src="{{ asset($item->image) }}" alt="" class="container-group-unit-image" />
+            <p>#{{ $item->city }} #{{ $item->shop }}</p>
+        </div>
+    @endforeach
 
 
 
