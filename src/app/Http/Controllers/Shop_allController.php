@@ -9,7 +9,6 @@ use App\Models\Category;
 use App\Models\Wrapper;
 use App\Models\Number;
 use App\Models\Emptyitem;
-use Illuminate\Support\Facades\DB;
 
 
 class Shop_allController extends Controller
@@ -36,11 +35,10 @@ class Shop_allController extends Controller
     {
         $authors = Author::all();
         $categories = Category::all();
-        $emptyitems = EmptyItem::all();
 
 
         // ビューにデータを渡す
-        return view('shop_all', ['authors' => $authors, 'categories' => $categories, 'emptyitems' => $emptyitems]);
+        return view('shop_all', ['authors' => $authors, 'categories' => $categories]);
     }
 
     public function shop_detail(Request $request)
@@ -93,23 +91,6 @@ class Shop_allController extends Controller
 
         // 配列のデータをビューに渡す
         return view('my_page', compact('authors', 'name', 'city', 'shop', 'image', 'date', 'time', 'fake'));
-    }
-
-    public function store(Request $request)
-    {
-        DB::table('emptyitems')->insert([
-            'name' => $request->name,
-            'image' => $request->image,
-            'city' => $request->city,
-            'shop' => $request->shop
-        ]);
-
-        // emptyitemsテーブルから全データを取得
-        $emptyItems = DB::table('emptyitems')->get();
-
-
-        // 処理後のリダイレクト先など、適宜設定
-        return redirect()->back();
     }
 
     public function showShops()
