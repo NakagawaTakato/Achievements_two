@@ -30,30 +30,11 @@
 
 
 
-    @foreach($items as $item)
-        <div class="container-group-unit-title">
-            @if($item->name)
-            <h1>{{ $item->name }}</h1>
-            @endif
-        </div>
+    <h1>{{ $name }}</h1>
 
-        @if($item->image)
-        <img src="{{ asset($item->image) }}" alt="" class="container-group-unit-image" />
-        @endif
+    <img src="{{ asset($image) }}" alt="" class="container-group-unit-image" />
 
-        @if($item->city || $item->shop)
-        <p>
-            @if($item->city)
-            #{{ $item->city }}
-            @endif
-            @if($item->shop)
-            #{{ $item->shop }}
-            @endif
-        </p>
-        @endif
-    @endforeach
-
-
+    <p>#{{ $city }} #{{ $shop }}</p>
 
     
 </div>

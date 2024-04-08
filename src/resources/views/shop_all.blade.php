@@ -67,17 +67,11 @@
       </form>
 
       <form action="/my_page" method="POST" >
-          @csrf
-          @php
-              $emptyitems->name = $author->name;
-              $emptyitems->image = $author->image;
-              $emptyitems->city = $author->city;
-              $emptyitems->shop = $author->shop;
-          @endphp
-          <input type="hidden" name="name" value="{{$emptyitems->name}}">
-          <input type="hidden" name="image" value="{{$emptyitems->image}}">
-          <input type="hidden" name="city" value="{{$emptyitems->city}}">
-          <input type="hidden" name="shop" value="{{$emptyitems->shop}}">
+        @csrf
+        <input type="hidden" name="name" value="{{$author->name}}">
+        <input type="hidden" name="image" value="{{$author->image}}">
+        <input type="hidden" name="city" value="{{$author->city}}">
+        <input type="hidden" name="shop" value="{{$author->shop}}">
           <button type="submit" class="wrapper-box-content-heart"><i class="fa-solid fa-heart"></i></button>
       </form>
     </div>
